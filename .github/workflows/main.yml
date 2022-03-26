@@ -23,12 +23,9 @@ jobs:
         uses: mattnotmitt/doxygen-action@v1
         with:
           doxyfile-path: "./.github/workflows/DoxyFile"
-          enable-latex: true
-          
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./doxygen
-          publish_branch: main
+          publish_dir: ./html
