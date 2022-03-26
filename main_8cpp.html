@@ -74,9 +74,11 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
-<tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f50b2534075b4bb2309b45162fc5b6"><td class="memItemLeft" align="right" valign="top">relayDriverBasic void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a36f50b2534075b4bb2309b45162fc5b6">setup</a> ()</td></tr>
+<tr class="memdesc:a36f50b2534075b4bb2309b45162fc5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">called once on startup by Arduino  <a href="main_8cpp.html#a36f50b2534075b4bb2309b45162fc5b6">More...</a><br /></td></tr>
+<tr class="separator:a36f50b2534075b4bb2309b45162fc5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
+<tr class="memdesc:afe461d27b9c48d5921c00d521181f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">called repeatedly by Arduino  <a href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">More...</a><br /></td></tr>
 <tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -95,22 +97,31 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>called repeatedly by Arduino </p>
+
 </div>
 </div>
-<a id="a4fc01d736fe50cf5b977f755b675f11d" name="a4fc01d736fe50cf5b977f755b675f11d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fc01d736fe50cf5b977f755b675f11d">&#9670;&nbsp;</a></span>setup()</h2>
+<a id="a36f50b2534075b4bb2309b45162fc5b6" name="a36f50b2534075b4bb2309b45162fc5b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36f50b2534075b4bb2309b45162fc5b6">&#9670;&nbsp;</a></span>setup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void setup </td>
+          <td class="memname">relayDriverBasic void setup </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>called once on startup by Arduino </p>
+<p >This software is for making an Electronic Load Controller.</p>
+<p >It uses an array of relays to keep the frequency of a synchronous generator constant.</p>
+<p ><a href="https://github.com/joshua-8/relay-ELC">https://github.com/joshua-8/relay-ELC</a></p>
+<p >Use PlatformIO to upload to an esp32 dev module</p>
+<p >by Joshua, spring 2022 </p>
 
 </div>
 </div>
