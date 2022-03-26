@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pin_0',['pin',['../class_relays_driver_basic.html#a953ccb683aedb09c13577071ef55dafd',1,'RelaysDriverBasic']]]
+  ['driver_0',['driver',['../class_load_adjust_relay_parallel_binary.html#a8a8c2eb71e3217408609d0f7b4d2a9dc',1,'LoadAdjustRelayParallelBinary']]]
 ];

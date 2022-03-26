@@ -95,10 +95,10 @@ Collaboration diagram for RelaysDriverBasic&lt; N &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a90f9fe2ba7714659300e00f2a924b214"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_relays_driver_basic.html#a90f9fe2ba7714659300e00f2a924b214">RelaysDriverBasic</a> (bool _activeHigh, byte _pins[N])</td></tr>
-<tr class="separator:a90f9fe2ba7714659300e00f2a924b214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8460c6eecf03bb3daa68dbcf22d0246c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_relays_driver_basic.html#a8460c6eecf03bb3daa68dbcf22d0246c">RelaysDriverBasic</a> (bool _active, std::initializer_list&lt; byte &gt; pins)</td></tr>
+<tr class="separator:a8460c6eecf03bb3daa68dbcf22d0246c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a380ae109ce57fc134cb60831515c0928"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_relays_driver_basic.html#a380ae109ce57fc134cb60831515c0928">begin</a> ()</td></tr>
-<tr class="memdesc:a380ae109ce57fc134cb60831515c0928"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function must be called on startup. It sets up pinmodes.  <a href="class_relays_driver_basic.html#a380ae109ce57fc134cb60831515c0928">More...</a><br /></td></tr>
+<tr class="memdesc:a380ae109ce57fc134cb60831515c0928"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function should be called on startup. It sets up pinmodes.  <a href="class_relays_driver_basic.html#a380ae109ce57fc134cb60831515c0928">More...</a><br /></td></tr>
 <tr class="separator:a380ae109ce57fc134cb60831515c0928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1bb2598627e0fcf9bfc4feeb4988324"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_relays_driver_basic.html#ad1bb2598627e0fcf9bfc4feeb4988324">set</a> (uint16_t bits)</td></tr>
 <tr class="memdesc:ad1bb2598627e0fcf9bfc4feeb4988324"><td class="mdescLeft">&#160;</td><td class="mdescRight">activate relays corresponding to a bit that's 1.  <a href="class_relays_driver_basic.html#ad1bb2598627e0fcf9bfc4feeb4988324">More...</a><br /></td></tr>
@@ -107,23 +107,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af38f82cdf6175693559a8a117ece2290"><td class="mdescLeft">&#160;</td><td class="mdescRight">activate relays corresponding to a bit that's 1.  <a href="class_relays_driver.html#af38f82cdf6175693559a8a117ece2290">More...</a><br /></td></tr>
 <tr class="separator:af38f82cdf6175693559a8a117ece2290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6ff967a30efd62130a0b6900891d6d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_relays_driver.html#ad6ff967a30efd62130a0b6900891d6d7">begin</a> ()=0</td></tr>
-<tr class="memdesc:ad6ff967a30efd62130a0b6900891d6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function must be called on startup. It sets up pinmodes.  <a href="class_relays_driver.html#ad6ff967a30efd62130a0b6900891d6d7">More...</a><br /></td></tr>
+<tr class="memdesc:ad6ff967a30efd62130a0b6900891d6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function should be called on startup. It sets up pinmodes.  <a href="class_relays_driver.html#ad6ff967a30efd62130a0b6900891d6d7">More...</a><br /></td></tr>
 <tr class="separator:ad6ff967a30efd62130a0b6900891d6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a953ccb683aedb09c13577071ef55dafd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_relays_driver_basic.html#a953ccb683aedb09c13577071ef55dafd">pin</a> [N]</td></tr>
 <tr class="separator:a953ccb683aedb09c13577071ef55dafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbf79057286ef901f50d8c1b589ef135"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_relays_driver_basic.html#afbf79057286ef901f50d8c1b589ef135">activeHigh</a></td></tr>
-<tr class="separator:afbf79057286ef901f50d8c1b589ef135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a23a4557b17c85005593c1735a56e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_relays_driver_basic.html#ab7a23a4557b17c85005593c1735a56e5">active</a></td></tr>
+<tr class="separator:ab7a23a4557b17c85005593c1735a56e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;uint8_t N&gt;<br />
 class RelaysDriverBasic&lt; N &gt;</div><p >This class controls an array of relays in a simple way. </p>
 <dl class="section note"><dt>Note</dt><dd>This is a template class, N is how many relays need to be controlled. N must be &lt;=16 It uses GPIO pins, and has no compensation for switching time. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a90f9fe2ba7714659300e00f2a924b214" name="a90f9fe2ba7714659300e00f2a924b214"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90f9fe2ba7714659300e00f2a924b214">&#9670;&nbsp;</a></span>RelaysDriverBasic()</h2>
+<a id="a8460c6eecf03bb3daa68dbcf22d0246c" name="a8460c6eecf03bb3daa68dbcf22d0246c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8460c6eecf03bb3daa68dbcf22d0246c">&#9670;&nbsp;</a></span>RelaysDriverBasic()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,13 +137,13 @@ template&lt;uint8_t N&gt; </div>
           <td class="memname"><a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt; N &gt;<a class="el" href="class_relays_driver_basic.html">::RelaysDriverBasic</a> </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>_activeHigh</em>, </td>
+          <td class="paramname"><em>_active</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">byte&#160;</td>
-          <td class="paramname"><em>_pins</em>[N]&#160;</td>
+          <td class="paramtype">std::initializer_list&lt; byte &gt;&#160;</td>
+          <td class="paramname"><em>pins</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -186,7 +186,7 @@ template&lt;uint8_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>this function must be called on startup. It sets up pinmodes. </p>
+<p>this function should be called on startup. It sets up pinmodes. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">None</td><td></td></tr>
@@ -244,8 +244,8 @@ template&lt;uint8_t N&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="afbf79057286ef901f50d8c1b589ef135" name="afbf79057286ef901f50d8c1b589ef135"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbf79057286ef901f50d8c1b589ef135">&#9670;&nbsp;</a></span>activeHigh</h2>
+<a id="ab7a23a4557b17c85005593c1735a56e5" name="ab7a23a4557b17c85005593c1735a56e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a23a4557b17c85005593c1735a56e5">&#9670;&nbsp;</a></span>active</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,7 +256,7 @@ template&lt;uint8_t N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt; N &gt;::activeHigh</td>
+          <td class="memname">bool <a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt; N &gt;::active</td>
         </tr>
       </table>
   </td>

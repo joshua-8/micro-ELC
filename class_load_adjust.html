@@ -73,16 +73,63 @@ $(function() {
  <a href="class_load_adjust.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_load_adjust_8h_source.html">LoadAdjust.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for LoadAdjust:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_load_adjust__inherit__graph.png" border="0" usemap="#a_load_adjust_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_load_adjust_inherit__map" id="a_load_adjust_inherit__map">
+<area shape="rect" title="This class defines an interface for any type of adjustable electrical load." alt="" coords="77,5,165,32"/>
+<area shape="rect" href="class_load_adjust_relay_parallel_binary.html" title=" " alt="" coords="5,80,236,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acda9c788da391f8e121bb33eaa7ab27a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_adjust.html#acda9c788da391f8e121bb33eaa7ab27a">setLoad</a> (float load)=0</td></tr>
 <tr class="memdesc:acda9c788da391f8e121bb33eaa7ab27a"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a new value for the adjustable load  <a href="class_load_adjust.html#acda9c788da391f8e121bb33eaa7ab27a">More...</a><br /></td></tr>
 <tr class="separator:acda9c788da391f8e121bb33eaa7ab27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f2d5deb8c16b328791eaa2cc3d6de6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_adjust.html#a63f2d5deb8c16b328791eaa2cc3d6de6">begin</a> ()=0</td></tr>
+<tr class="memdesc:a63f2d5deb8c16b328791eaa2cc3d6de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">set up pin states  <a href="class_load_adjust.html#a63f2d5deb8c16b328791eaa2cc3d6de6">More...</a><br /></td></tr>
+<tr class="separator:a63f2d5deb8c16b328791eaa2cc3d6de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This class defines an interface for any type of adjustable electrical load. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a63f2d5deb8c16b328791eaa2cc3d6de6" name="a63f2d5deb8c16b328791eaa2cc3d6de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63f2d5deb8c16b328791eaa2cc3d6de6">&#9670;&nbsp;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LoadAdjust::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set up pin states </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_load_adjust_relay_parallel_binary.html#a8124e501877bccbd33c71aefa5c8be99">LoadAdjustRelayParallelBinary&lt; N &gt;</a>.</p>
+
+</div>
+</div>
 <a id="acda9c788da391f8e121bb33eaa7ab27a" name="acda9c788da391f8e121bb33eaa7ab27a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acda9c788da391f8e121bb33eaa7ab27a">&#9670;&nbsp;</a></span>setLoad()</h2>
 
@@ -120,6 +167,8 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Implemented in <a class="el" href="class_load_adjust_relay_parallel_binary.html#a0d67aec4a6e74e0a7d41894c26e4c5ae">LoadAdjustRelayParallelBinary&lt; N &gt;</a>.</p>
 
 </div>
 </div>

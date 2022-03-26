@@ -67,19 +67,29 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a36f50b2534075b4bb2309b45162fc5b6"><td class="memItemLeft" align="right" valign="top">relayDriverBasic void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a36f50b2534075b4bb2309b45162fc5b6">setup</a> ()</td></tr>
-<tr class="memdesc:a36f50b2534075b4bb2309b45162fc5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">called once on startup by Arduino  <a href="main_8cpp.html#a36f50b2534075b4bb2309b45162fc5b6">More...</a><br /></td></tr>
-<tr class="separator:a36f50b2534075b4bb2309b45162fc5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
+<tr class="memdesc:a4fc01d736fe50cf5b977f755b675f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">called once on startup by Arduino  <a href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">More...</a><br /></td></tr>
+<tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
 <tr class="memdesc:afe461d27b9c48d5921c00d521181f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">called repeatedly by Arduino  <a href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">More...</a><br /></td></tr>
 <tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:adf969b76cbdccc6d59013f3ed8e291ef"><td class="memItemLeft" align="right" valign="top">const byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a> = 8</td></tr>
+<tr class="separator:adf969b76cbdccc6d59013f3ed8e291ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8b502aa1264686ce2f3ad265433aee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt; <a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adf8b502aa1264686ce2f3ad265433aee">relayDriver</a> = <a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(LOW, { 16, 17, 18, 19, 21, 22, 23, 26 })</td></tr>
+<tr class="separator:adf8b502aa1264686ce2f3ad265433aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514177dc5b486bc3a5243407266b3059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt; <a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a514177dc5b486bc3a5243407266b3059">loadAdjust</a> = <a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(<a class="el" href="main_8cpp.html#adf8b502aa1264686ce2f3ad265433aee">relayDriver</a>)</td></tr>
+<tr class="separator:a514177dc5b486bc3a5243407266b3059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="afe461d27b9c48d5921c00d521181f12f" name="afe461d27b9c48d5921c00d521181f12f"></a>
@@ -101,14 +111,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a36f50b2534075b4bb2309b45162fc5b6" name="a36f50b2534075b4bb2309b45162fc5b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36f50b2534075b4bb2309b45162fc5b6">&#9670;&nbsp;</a></span>setup()</h2>
+<a id="a4fc01d736fe50cf5b977f755b675f11d" name="a4fc01d736fe50cf5b977f755b675f11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc01d736fe50cf5b977f755b675f11d">&#9670;&nbsp;</a></span>setup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">relayDriverBasic void setup </td>
+          <td class="memname">void setup </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -117,11 +127,54 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>called once on startup by Arduino </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a514177dc5b486bc3a5243407266b3059" name="a514177dc5b486bc3a5243407266b3059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a514177dc5b486bc3a5243407266b3059">&#9670;&nbsp;</a></span>loadAdjust</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt; loadAdjust = <a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(<a class="el" href="main_8cpp.html#adf8b502aa1264686ce2f3ad265433aee">relayDriver</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf969b76cbdccc6d59013f3ed8e291ef" name="adf969b76cbdccc6d59013f3ed8e291ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf969b76cbdccc6d59013f3ed8e291ef">&#9670;&nbsp;</a></span>numRelays</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const byte numRelays = 8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 <p >This software is for making an Electronic Load Controller.</p>
 <p >It uses an array of relays to keep the frequency of a synchronous generator constant.</p>
 <p ><a href="https://github.com/joshua-8/relay-ELC">https://github.com/joshua-8/relay-ELC</a></p>
 <p >Use PlatformIO to upload to an esp32 dev module</p>
 <p >by Joshua, spring 2022 </p>
+
+</div>
+</div>
+<a id="adf8b502aa1264686ce2f3ad265433aee" name="adf8b502aa1264686ce2f3ad265433aee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8b502aa1264686ce2f3ad265433aee">&#9670;&nbsp;</a></span>relayDriver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt; relayDriver = <a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(LOW, { 16, 17, 18, 19, 21, 22, 23, 26 })</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

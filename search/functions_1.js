@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['begin_0',['begin',['../class_relays_driver.html#ad6ff967a30efd62130a0b6900891d6d7',1,'RelaysDriver::begin()'],['../class_relays_driver_basic.html#a380ae109ce57fc134cb60831515c0928',1,'RelaysDriverBasic::begin()']]]
+  ['loadadjustrelayparallelbinary_0',['LoadAdjustRelayParallelBinary',['../class_load_adjust_relay_parallel_binary.html#aae243f55a30a3c9fc74ae87410b0ea81',1,'LoadAdjustRelayParallelBinary']]],
+  ['loop_1',['loop',['../main_8cpp.html#afe461d27b9c48d5921c00d521181f12f',1,'main.cpp']]]
 ];
