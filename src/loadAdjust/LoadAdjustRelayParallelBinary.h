@@ -4,9 +4,8 @@
 #include "relaysDriver/RelaysDriver.h"
 #include <Arduino.h>
 /**
- * @brief
+ * @brief load adjustor that switches
  * @note  this is a template class, N is how many relays are used.
- * @retval None
  */
 template <byte N>
 class LoadAdjustRelayParallelBinary : public LoadAdjust {
