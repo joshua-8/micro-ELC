@@ -8,7 +8,7 @@ class RelaysDriver {
 public:
     /**
      * @brief activate relays corresponding to a bit that's 1.
-     * @note 1 is the LSB, e.g. 0101 turns on the first and third relay.
+     * @note 1 is the LSB, e.g. 001 turns on the first relay.
      * @param  bits: Think of this number as an array of bits. Bits that there is no relay for are ignored.
      * @retval None
      */
