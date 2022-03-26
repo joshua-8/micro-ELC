@@ -15,7 +15,7 @@ public:
     virtual void set(uint16_t bits) = 0;
 
     /**
-     * @brief  this function must be called on startup. It sets up pinmodes.
+     * @brief  this function should be called on startup. It sets up pinmodes.
      * @retval None
      */
     virtual void begin() = 0;

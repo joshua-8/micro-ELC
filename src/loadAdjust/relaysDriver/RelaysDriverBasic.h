@@ -13,28 +13,28 @@ class RelaysDriverBasic : public RelaysDriver {
 
 protected:
     uint8_t pin[N];
-    bool activeHigh;
+    bool active;
 
 public:
-    RelaysDriverBasic(bool _activeHigh, byte _pins[N])
+    RelaysDriverBasic(bool _active, std::initializer_list<byte> pins)
     {
-        activeHigh = _activeHigh;
-        for (int i = 0; i < N; i++) {
-            pin[i] = _pins[i];
-        }
+        // https://stackoverflow.com/a/4118050
+        assert(pins.size() == N); // number of pins provided in constructor must equal Number of relays
+        std::copy(pins.begin(), pins.end(), pin);
+        active = _active;
     }
     void begin()
     {
         for (int i = 0; i < N; i++) {
             pinMode(pin[i], OUTPUT);
-            digitalWrite(pin[i], !activeHigh); // deactivate
+            digitalWrite(pin[i], !active); // deactivate
         }
     }
     void set(uint16_t bits)
     {
-        for (int relay = 0; relay < N; relay++) {
-            bool setState = ((bits >> (relay)) & 1) == activeHigh;
-            digitalWrite(pin[relay], setState);
+        for (byte relay = 0; relay < N; relay++) {
+            bool setState = ((bits >> (relay)) & 1);
+            digitalWrite(pin[relay], setState == active);
         }
     }
 };

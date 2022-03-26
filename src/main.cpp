@@ -12,17 +12,24 @@
  * */
 
 // include libraries and header files here:
+#include "loadAdjust/LoadAdjustRelayParallelBinary.h"
 #include "loadAdjust/relaysDriver/relaysDriverBasic.h"
 #include <Arduino.h>
 
+// constants
+const byte numRelays = 8;
+
 // declare instances of objects here:
-relayDriverBasic
+RelaysDriverBasic<numRelays> relayDriver = RelaysDriverBasic<numRelays>(LOW, { 16, 17, 18, 19, 21, 22, 23, 26 });
+LoadAdjustRelayParallelBinary<numRelays> loadAdjust = LoadAdjustRelayParallelBinary<numRelays>(relayDriver);
 
 /**
  * @brief  called once on startup by Arduino
  */
 void setup()
 {
+    Serial.begin(115200);
+    loadAdjust.begin();
 }
 
 /**
@@ -30,4 +37,5 @@ void setup()
  */
 void loop()
 {
+    loadAdjust.setLoad((millis() - 6000.0) / 30000.0);
 }

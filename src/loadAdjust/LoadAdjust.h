@@ -12,5 +12,10 @@ public:
      * @retval None
      */
     virtual void setLoad(float load) = 0;
+    /**
+     * @brief  set up pin states
+     * @retval None
+     */
+    virtual void begin() = 0;
 };
 #endif
