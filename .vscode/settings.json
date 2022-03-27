@@ -4,6 +4,7 @@
         "doxygen",
         "GPIO",
         "mattnotmitt",
-        "peaceiris"
+        "peaceiris",
+        "JENCODER"
     ]
 }

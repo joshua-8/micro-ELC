@@ -14,6 +14,7 @@
 // include libraries and header files here:
 #include "loadAdjust/LoadAdjustRelayParallelBinary.h"
 #include "loadAdjust/relaysDriver/relaysDriverBasic.h"
+#include "measurement/TachometerJEncoder.h"
 #include <Arduino.h>
 
 // constants
@@ -22,6 +23,8 @@ const byte numRelays = 8;
 // declare instances of objects here:
 RelaysDriverBasic<numRelays> relayDriver = RelaysDriverBasic<numRelays>(LOW, { 16, 17, 18, 19, 21, 22, 23, 26 });
 LoadAdjustRelayParallelBinary<numRelays> loadAdjust = LoadAdjustRelayParallelBinary<numRelays>(relayDriver);
+
+TachometerJEncoder tach = TachometerJEncoder(new JEncoderSingleAttachInterrupt(27, 1.0));
 
 /**
  * @brief  called once on startup by Arduino

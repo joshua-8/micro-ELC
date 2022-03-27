@@ -9,12 +9,10 @@ public:
     /**
      * @brief  set a new value for the adjustable load
      * @param  load: between 0.0 and 1.0 where 1.0 is the highest load
-     * @retval None
      */
     virtual void setLoad(float load) = 0;
     /**
      * @brief  set up pin states
-     * @retval None
      */
     virtual void begin() = 0;
 };
