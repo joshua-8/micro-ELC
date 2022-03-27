@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loadadjust_0',['loadAdjust',['../main_8cpp.html#a514177dc5b486bc3a5243407266b3059',1,'main.cpp']]]
+  ['encoder_0',['encoder',['../class_tachometer_j_encoder.html#a4b092f9e39710e4921591e1d5aac985d',1,'TachometerJEncoder']]]
 ];

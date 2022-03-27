@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pin_0',['pin',['../class_relays_driver_basic.html#a953ccb683aedb09c13577071ef55dafd',1,'RelaysDriverBasic']]]
+  ['numrelays_0',['numRelays',['../main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef',1,'main.cpp']]]
 ];
