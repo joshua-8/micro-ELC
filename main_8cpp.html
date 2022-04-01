@@ -75,6 +75,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a5e0fbaf9eeaaa2c2cea317ebe7551abb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a5e0fbaf9eeaaa2c2cea317ebe7551abb">jENCODER_MAKE_ISR_MACRO</a> (<a class="el" href="main_8cpp.html#aaef92e6968c12b63fe7609bd847ccb7f">tachEncoder</a>)</td></tr>
+<tr class="separator:a5e0fbaf9eeaaa2c2cea317ebe7551abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
 <tr class="memdesc:a4fc01d736fe50cf5b977f755b675f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">called once on startup by Arduino  <a href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">More...</a><br /></td></tr>
 <tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -84,16 +86,45 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:adf969b76cbdccc6d59013f3ed8e291ef"><td class="memItemLeft" align="right" valign="top">const byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a> = 8</td></tr>
+<tr class="memitem:adf969b76cbdccc6d59013f3ed8e291ef"><td class="memItemLeft" align="right" valign="top">const byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a> = 4</td></tr>
+<tr class="memdesc:adf969b76cbdccc6d59013f3ed8e291ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">how many relays are in your array?  <a href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">More...</a><br /></td></tr>
 <tr class="separator:adf969b76cbdccc6d59013f3ed8e291ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf8b502aa1264686ce2f3ad265433aee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt; <a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adf8b502aa1264686ce2f3ad265433aee">relayDriver</a> = <a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(LOW, { 16, 17, 18, 19, 21, 22, 23, 26 })</td></tr>
+<tr class="memitem:adf8b502aa1264686ce2f3ad265433aee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt; <a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adf8b502aa1264686ce2f3ad265433aee">relayDriver</a> = <a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(LOW, { 21, 22, 23, 26 })</td></tr>
 <tr class="separator:adf8b502aa1264686ce2f3ad265433aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a514177dc5b486bc3a5243407266b3059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt; <a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a514177dc5b486bc3a5243407266b3059">loadAdjust</a> = <a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(<a class="el" href="main_8cpp.html#adf8b502aa1264686ce2f3ad265433aee">relayDriver</a>)</td></tr>
 <tr class="separator:a514177dc5b486bc3a5243407266b3059"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a44be3fe5ae48e9599d0d9a1ffb9374"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2a44be3fe5ae48e9599d0d9a1ffb9374">tach</a> = <a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a>(new JEncoderSingleAttachInterrupt(27, 1.0))</td></tr>
+<tr class="memitem:aaef92e6968c12b63fe7609bd847ccb7f"><td class="memItemLeft" align="right" valign="top">JEncoderSingleAttachInterrupt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aaef92e6968c12b63fe7609bd847ccb7f">tachEncoder</a> = JEncoderSingleAttachInterrupt(27, 1.0, false, 100000, 10000)</td></tr>
+<tr class="separator:aaef92e6968c12b63fe7609bd847ccb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a44be3fe5ae48e9599d0d9a1ffb9374"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2a44be3fe5ae48e9599d0d9a1ffb9374">tach</a> = <a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a>(<a class="el" href="main_8cpp.html#aaef92e6968c12b63fe7609bd847ccb7f">tachEncoder</a>, 6)</td></tr>
 <tr class="separator:a2a44be3fe5ae48e9599d0d9a1ffb9374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42e310b3d595fffa6195cc51d11e240"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac42e310b3d595fffa6195cc51d11e240">setpoint</a> = 40</td></tr>
+<tr class="separator:ac42e310b3d595fffa6195cc51d11e240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c92b536886cab3f637dce4b7a0956bd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0c92b536886cab3f637dce4b7a0956bd">input</a> = 0</td></tr>
+<tr class="separator:a0c92b536886cab3f637dce4b7a0956bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1084d7e47a5571b229a33ad347cc9453"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a1084d7e47a5571b229a33ad347cc9453">output</a> = 0</td></tr>
+<tr class="separator:a1084d7e47a5571b229a33ad347cc9453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693b350e8183597ad51eb9081cfa7db3"><td class="memItemLeft" align="right" valign="top">QuickPID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a693b350e8183597ad51eb9081cfa7db3">pidControl</a> = QuickPID(&amp;<a class="el" href="main_8cpp.html#a0c92b536886cab3f637dce4b7a0956bd">input</a>, &amp;<a class="el" href="main_8cpp.html#a1084d7e47a5571b229a33ad347cc9453">output</a>, &amp;<a class="el" href="main_8cpp.html#ac42e310b3d595fffa6195cc51d11e240">setpoint</a>)</td></tr>
+<tr class="separator:a693b350e8183597ad51eb9081cfa7db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a5e0fbaf9eeaaa2c2cea317ebe7551abb" name="a5e0fbaf9eeaaa2c2cea317ebe7551abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e0fbaf9eeaaa2c2cea317ebe7551abb">&#9670;&nbsp;</a></span>jENCODER_MAKE_ISR_MACRO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jENCODER_MAKE_ISR_MACRO </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main_8cpp.html#aaef92e6968c12b63fe7609bd847ccb7f">tachEncoder</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="afe461d27b9c48d5921c00d521181f12f" name="afe461d27b9c48d5921c00d521181f12f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe461d27b9c48d5921c00d521181f12f">&#9670;&nbsp;</a></span>loop()</h2>
 
@@ -133,6 +164,20 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a0c92b536886cab3f637dce4b7a0956bd" name="a0c92b536886cab3f637dce4b7a0956bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c92b536886cab3f637dce4b7a0956bd">&#9670;&nbsp;</a></span>input</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float input = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a514177dc5b486bc3a5243407266b3059" name="a514177dc5b486bc3a5243407266b3059"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a514177dc5b486bc3a5243407266b3059">&#9670;&nbsp;</a></span>loadAdjust</h2>
 
@@ -154,15 +199,45 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const byte numRelays = 8</td>
+          <td class="memname">const byte numRelays = 4</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>how many relays are in your array? </p>
 <p >This software is for making an Electronic Load Controller.</p>
 <p >It uses an array of relays to keep the frequency of a synchronous generator constant.</p>
 <p ><a href="https://github.com/joshua-8/relay-ELC">https://github.com/joshua-8/relay-ELC</a></p>
 <p >Use PlatformIO to upload to an esp32 dev module</p>
 <p >by Joshua, spring 2022 </p>
+
+</div>
+</div>
+<a id="a1084d7e47a5571b229a33ad347cc9453" name="a1084d7e47a5571b229a33ad347cc9453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1084d7e47a5571b229a33ad347cc9453">&#9670;&nbsp;</a></span>output</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float output = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a693b350e8183597ad51eb9081cfa7db3" name="a693b350e8183597ad51eb9081cfa7db3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a693b350e8183597ad51eb9081cfa7db3">&#9670;&nbsp;</a></span>pidControl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QuickPID pidControl = QuickPID(&amp;<a class="el" href="main_8cpp.html#a0c92b536886cab3f637dce4b7a0956bd">input</a>, &amp;<a class="el" href="main_8cpp.html#a1084d7e47a5571b229a33ad347cc9453">output</a>, &amp;<a class="el" href="main_8cpp.html#ac42e310b3d595fffa6195cc51d11e240">setpoint</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -173,7 +248,21 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt; relayDriver = <a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(LOW, { 16, 17, 18, 19, 21, 22, 23, 26 })</td>
+          <td class="memname"><a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt; relayDriver = <a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(LOW, { 21, 22, 23, 26 })</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac42e310b3d595fffa6195cc51d11e240" name="ac42e310b3d595fffa6195cc51d11e240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac42e310b3d595fffa6195cc51d11e240">&#9670;&nbsp;</a></span>setpoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float setpoint = 40</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -187,7 +276,21 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a> tach = <a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a>(new JEncoderSingleAttachInterrupt(27, 1.0))</td>
+          <td class="memname"><a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a> tach = <a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a>(<a class="el" href="main_8cpp.html#aaef92e6968c12b63fe7609bd847ccb7f">tachEncoder</a>, 6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaef92e6968c12b63fe7609bd847ccb7f" name="aaef92e6968c12b63fe7609bd847ccb7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef92e6968c12b63fe7609bd847ccb7f">&#9670;&nbsp;</a></span>tachEncoder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">JEncoderSingleAttachInterrupt tachEncoder = JEncoderSingleAttachInterrupt(27, 1.0, false, 100000, 10000)</td>
         </tr>
       </table>
 </div><div class="memdoc">

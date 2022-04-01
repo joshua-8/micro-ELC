@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['main_2ecpp_0',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['measurement_1',['Measurement',['../class_measurement.html',1,'']]],
-  ['measurement_2eh_2',['Measurement.h',['../_measurement_8h.html',1,'']]]
+  ['jencoder_5fmake_5fisr_5fmacro_0',['jENCODER_MAKE_ISR_MACRO',['../main_8cpp.html#a5e0fbaf9eeaaa2c2cea317ebe7551abb',1,'main.cpp']]]
 ];

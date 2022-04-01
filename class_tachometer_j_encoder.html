@@ -95,8 +95,8 @@ Collaboration diagram for TachometerJEncoder:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a78950e0bad2472eed88cfb04bfb9f2bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tachometer_j_encoder.html#a78950e0bad2472eed88cfb04bfb9f2bd">TachometerJEncoder</a> (JEncoder *_encoder)</td></tr>
-<tr class="separator:a78950e0bad2472eed88cfb04bfb9f2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee1142cb785acc9071e7ae90d5850e8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tachometer_j_encoder.html#aee1142cb785acc9071e7ae90d5850e8e">TachometerJEncoder</a> (JEncoder &amp;_encoder, uint16_t numSavedForSmoothing=0)</td></tr>
+<tr class="separator:aee1142cb785acc9071e7ae90d5850e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a901dd9abd65952e7909204a98f311abf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tachometer_j_encoder.html#a901dd9abd65952e7909204a98f311abf">getMeasurement</a> ()</td></tr>
 <tr class="memdesc:a901dd9abd65952e7909204a98f311abf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this method to get the most recent measurement on the speed of the generator.  <a href="class_tachometer_j_encoder.html#a901dd9abd65952e7909204a98f311abf">More...</a><br /></td></tr>
 <tr class="separator:a901dd9abd65952e7909204a98f311abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,15 +112,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a4b092f9e39710e4921591e1d5aac985d"><td class="memItemLeft" align="right" valign="top">JEncoder *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tachometer_j_encoder.html#a4b092f9e39710e4921591e1d5aac985d">encoder</a></td></tr>
-<tr class="separator:a4b092f9e39710e4921591e1d5aac985d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f320c4007a23416467ebcec3fdbb8e9"><td class="memItemLeft" align="right" valign="top">JEncoder &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tachometer_j_encoder.html#a8f320c4007a23416467ebcec3fdbb8e9">encoder</a></td></tr>
+<tr class="separator:a8f320c4007a23416467ebcec3fdbb8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This class measures the speed of a generator using a tachometer. </p>
 <dl class="section note"><dt>Note</dt><dd>you may use any of <a href="https://joshua-8.github.io/JMotor/class_j_encoder.html">these encoders</a>. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a78950e0bad2472eed88cfb04bfb9f2bd" name="a78950e0bad2472eed88cfb04bfb9f2bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78950e0bad2472eed88cfb04bfb9f2bd">&#9670;&nbsp;</a></span>TachometerJEncoder()</h2>
+<a id="aee1142cb785acc9071e7ae90d5850e8e" name="aee1142cb785acc9071e7ae90d5850e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee1142cb785acc9071e7ae90d5850e8e">&#9670;&nbsp;</a></span>TachometerJEncoder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,9 +131,19 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">TachometerJEncoder::TachometerJEncoder </td>
           <td>(</td>
-          <td class="paramtype">JEncoder *&#160;</td>
-          <td class="paramname"><em>_encoder</em></td><td>)</td>
+          <td class="paramtype">JEncoder &amp;&#160;</td>
+          <td class="paramname"><em>_encoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>numSavedForSmoothing</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -211,14 +221,14 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4b092f9e39710e4921591e1d5aac985d" name="a4b092f9e39710e4921591e1d5aac985d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b092f9e39710e4921591e1d5aac985d">&#9670;&nbsp;</a></span>encoder</h2>
+<a id="a8f320c4007a23416467ebcec3fdbb8e9" name="a8f320c4007a23416467ebcec3fdbb8e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f320c4007a23416467ebcec3fdbb8e9">&#9670;&nbsp;</a></span>encoder</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">JEncoder* TachometerJEncoder::encoder</td>
+          <td class="memname">JEncoder&amp; TachometerJEncoder::encoder</td>
         </tr>
       </table>
 </div><div class="memdoc">
