@@ -22,10 +22,10 @@
 /**
  * @brief  how many relays are in your array?
  * */
-const byte numRelays = 4;
+const byte numRelays = 5;
 
 // declare instances of objects here:
-RelaysDriverBasic<numRelays> relayDriver = RelaysDriverBasic<numRelays>(LOW, { 21, 22, 23, 26 }); // { 16, 17, 18, 19, 21, 22, 23, 26 });
+RelaysDriverBasic<numRelays> relayDriver = RelaysDriverBasic<numRelays>(LOW, { 21, 22, 19, 23, 26 }); // { 16, 17, 18, 19, 21, 22, 23, 26 });
 LoadAdjustRelayParallelBinary<numRelays> loadAdjust = LoadAdjustRelayParallelBinary<numRelays>(relayDriver);
 
 JEncoderSingleAttachInterrupt tachEncoder = JEncoderSingleAttachInterrupt(27, 1.0, false, 100000, 10000); // pin, dist per count, reverse, slowest interval us, switchbounce us
