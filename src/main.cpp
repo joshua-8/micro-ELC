@@ -48,7 +48,7 @@ void setup()
 
     pidControl.SetOutputLimits(-.5, .5);
     pidControl.SetSampleTimeUs(20000);
-    pidControl.SetTunings(.009, .009, 0);
+    pidControl.SetTunings(.013, .013, 0);
     pidControl.SetMode(QuickPID::Control::automatic); // turn on pid
 }
 
