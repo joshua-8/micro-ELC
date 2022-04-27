@@ -4,6 +4,7 @@
 #include <Arduino.h>
 /**
  * @brief This class controls an array of relays in a simple way.
+ * @note This class could also work with transistors or MOSFETs, which are better than mechanical relays in terms of switching time and lifetime.
  * It uses GPIO pins, and has no compensation for switching time.
  * @param N how many relays need to be controlled. N must be <=16 (because set() uses a 16 bit variable).
  */
