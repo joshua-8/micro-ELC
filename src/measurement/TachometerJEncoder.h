@@ -1,6 +1,6 @@
 #ifndef TACHOMETER_JENCODER_H
 #define TACHOMETER_JENCODER_H
-#include "JEncoder/JEncoder.h"
+#include "JEncoder/JEncoder.h" //from JMotor library
 #include "Measurement.h"
 #include <Arduino.h>
 #include <RunningAverage.h>

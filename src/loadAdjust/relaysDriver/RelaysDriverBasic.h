@@ -1,6 +1,6 @@
 #ifndef RELAYS_DRIVER_BASIC_H
 #define RELAYS_DRIVER_BASIC_H
-#include "relaysDriver.h"
+#include "RelaysDriver.h"
 #include <Arduino.h>
 /**
  * @brief This class controls an array of relays in a simple way.

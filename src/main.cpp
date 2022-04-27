@@ -13,7 +13,7 @@
 
 // include libraries and header files here:
 #include "loadAdjust/LoadAdjustRelayParallelBinary.h"
-#include "loadAdjust/relaysDriver/relaysDriverBasic.h"
+#include "loadAdjust/relaysDriver/RelaysDriverBasic.h"
 #include "measurement/TachometerJEncoder.h"
 #include <Arduino.h>
 #include <QuickPID.h>
