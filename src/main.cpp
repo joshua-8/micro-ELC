@@ -28,9 +28,10 @@ const byte numRelays = 5;
 RelaysDriverBasic<numRelays> relayDriver = RelaysDriverBasic<numRelays>(LOW, { 21, 22, 19, 23, 26 }); // { 16, 17, 18, 19, 21, 22, 23, 26 });
 LoadAdjustRelayParallelBinary<numRelays> loadAdjust = LoadAdjustRelayParallelBinary<numRelays>(relayDriver);
 
-JEncoderSingleAttachInterrupt tachEncoder = JEncoderSingleAttachInterrupt(27, 1.0, false, 100000, 10000); // pin, dist per count, reverse, slowest interval us, switchbounce us
-TachometerJEncoder tach = TachometerJEncoder(tachEncoder, 6);
-jENCODER_MAKE_ISR_MACRO(tachEncoder);
+// JEncoderSingleAttachInterrupt tachEncoder = JEncoderSingleAttachInterrupt(27, 1.0, false, 100000, 10000); // pin, dist per count, reverse, slowest interval us, switchbounce us
+// jENCODER_MAKE_ISR_MACRO(tachEncoder);
+JEncoderAS5048bI2C tachEncoder = JEncoderAS5048bI2C();
+TachometerJEncoder tach = TachometerJEncoder(tachEncoder, 1);
 
 float setpoint = 40;
 float input = 0;
@@ -44,7 +45,7 @@ void setup()
 {
     Serial.begin(115200);
     loadAdjust.begin();
-    tachEncoder.setUpInterrupts(tachEncoder_jENCODER_ISR);
+    // tachEncoder.setUpInterrupts(tachEncoder_jENCODER_ISR);
 
     pidControl.SetOutputLimits(-.5, .5);
     pidControl.SetSampleTimeUs(20000);
