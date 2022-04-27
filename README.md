@@ -1,10 +1,10 @@
-# relay-ELC
+# micro-ELC
 
 WORK IN PROGRESS!
 
 This software is for making an Electronic Load Controller.
 
-It uses an array of relays to keep the frequency of a synchronous generator constant.
+It uses a power of two array of resistors to keep the frequency of a synchronous generator constant.
 
 Use PlatformIO to upload to an esp32 dev module
 
