@@ -1,7 +1,7 @@
 /**
  * This software is for making an Electronic Load Controller.
  *
- * It uses an array of relays to keep the frequency of a synchronous generator constant.
+ * It uses an array of resistors to keep the frequency of a synchronous generator constant.
  *
  * https://github.com/joshua-8/relay-ELC
  *

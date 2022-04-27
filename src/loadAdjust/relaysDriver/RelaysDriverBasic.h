@@ -4,8 +4,8 @@
 #include <Arduino.h>
 /**
  * @brief This class controls an array of relays in a simple way.
- * @note This is a template class, N is how many relays need to be controlled. N must be <=16
  * It uses GPIO pins, and has no compensation for switching time.
+ * @param N how many relays need to be controlled. N must be <=16 (because set() uses a 16 bit variable).
  */
 template <uint8_t N>
 class RelaysDriverBasic : public RelaysDriver {
@@ -16,13 +16,23 @@ protected:
     bool active;
 
 public:
-    RelaysDriverBasic(bool _active, std::initializer_list<byte> pins)
+    /**
+     * @brief  constructor.
+     * @param  _active: do the switches activate on a HIGH or LOW output?
+     * @param  pins: {list, of, pins}
+     */
+    template <typename T, size_t n>
+    RelaysDriverBasic(bool _active, const T (&pins)[n])
     {
-        // https://stackoverflow.com/a/4118050
-        assert(pins.size() == N); // number of pins provided in constructor must equal Number of relays
-        std::copy(pins.begin(), pins.end(), pin);
+        // https://stackoverflow.com/a/38679907
+        static_assert(n == N, "error: please provide the correct number of pins");
+        for (int pinNumber = 0; pinNumber < N; pinNumber++) {
+            pin[pinNumber] = pins[pinNumber];
+        }
+
         active = _active;
     }
+
     void begin()
     {
         for (int i = 0; i < N; i++) {
