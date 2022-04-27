@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['relay_2delc_0',['relay-ELC',['../index.html',1,'']]]
+  ['micro_2delc_0',['micro-ELC',['../index.html',1,'']]]
 ];
