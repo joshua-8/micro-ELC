@@ -1,5 +1,7 @@
 # micro-ELC
 
+[![github actions badge](https://github.com/joshua-8/micro-ELC/actions/workflows/main.yml/badge.svg)](https://github.com/joshua-8/micro-ELC/actions)
+
 WORK IN PROGRESS!
 
 This software is for making an Electronic Load Controller.
