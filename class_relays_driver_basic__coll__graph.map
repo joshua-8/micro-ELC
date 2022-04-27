@@ -1,4 +1,4 @@
 <map id="RelaysDriverBasic&lt; N &gt;" name="RelaysDriverBasic&lt; N &gt;">
-<area shape="rect" id="node1" title="This class controls an array of relays in a simple way." alt="" coords="5,80,165,107"/>
+<area shape="rect" id="node1" title="This class controls an array of relays in a simple way. It uses GPIO pins, and has no compensation fo..." alt="" coords="5,80,165,107"/>
 <area shape="rect" id="node2" href="$class_relays_driver.html" title="This class defines an interface for any class that can control an array of relays." alt="" coords="38,5,133,32"/>
 </map>
