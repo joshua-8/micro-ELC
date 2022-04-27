@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['loadadjustrelayparallelbinary_0',['LoadAdjustRelayParallelBinary',['../class_load_adjust_relay_parallel_binary.html#aae243f55a30a3c9fc74ae87410b0ea81',1,'LoadAdjustRelayParallelBinary']]],
-  ['loop_1',['loop',['../main_8cpp.html#afe461d27b9c48d5921c00d521181f12f',1,'main.cpp']]]
+  ['relaysdriverbasic_0',['RelaysDriverBasic',['../class_relays_driver_basic.html#a8a239653fb8fd98b2d647b62739d3da8',1,'RelaysDriverBasic']]],
+  ['run_1',['run',['../class_measurement.html#aec68c0e7db76fd7bc70bdc389325e20a',1,'Measurement::run()'],['../class_tachometer_j_encoder.html#a499d846b8d4aaebf7637dcd585bb5575',1,'TachometerJEncoder::run()']]]
 ];

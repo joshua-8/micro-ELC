@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['numrelays_0',['numRelays',['../main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef',1,'main.cpp']]]
+  ['output_0',['output',['../main_8cpp.html#a1084d7e47a5571b229a33ad347cc9453',1,'main.cpp']]]
 ];

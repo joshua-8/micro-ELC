@@ -75,8 +75,6 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5e0fbaf9eeaaa2c2cea317ebe7551abb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a5e0fbaf9eeaaa2c2cea317ebe7551abb">jENCODER_MAKE_ISR_MACRO</a> (<a class="el" href="main_8cpp.html#aaef92e6968c12b63fe7609bd847ccb7f">tachEncoder</a>)</td></tr>
-<tr class="separator:a5e0fbaf9eeaaa2c2cea317ebe7551abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
 <tr class="memdesc:a4fc01d736fe50cf5b977f755b675f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">called once on startup by Arduino  <a href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">More...</a><br /></td></tr>
 <tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,9 +91,9 @@ Variables</h2></td></tr>
 <tr class="separator:adf8b502aa1264686ce2f3ad265433aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a514177dc5b486bc3a5243407266b3059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt; <a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a514177dc5b486bc3a5243407266b3059">loadAdjust</a> = <a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(<a class="el" href="main_8cpp.html#adf8b502aa1264686ce2f3ad265433aee">relayDriver</a>)</td></tr>
 <tr class="separator:a514177dc5b486bc3a5243407266b3059"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaef92e6968c12b63fe7609bd847ccb7f"><td class="memItemLeft" align="right" valign="top">JEncoderSingleAttachInterrupt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aaef92e6968c12b63fe7609bd847ccb7f">tachEncoder</a> = JEncoderSingleAttachInterrupt(27, 1.0, false, 100000, 10000)</td></tr>
-<tr class="separator:aaef92e6968c12b63fe7609bd847ccb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a44be3fe5ae48e9599d0d9a1ffb9374"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2a44be3fe5ae48e9599d0d9a1ffb9374">tach</a> = <a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a>(<a class="el" href="main_8cpp.html#aaef92e6968c12b63fe7609bd847ccb7f">tachEncoder</a>, 6)</td></tr>
+<tr class="memitem:a2b91aa171683aefefbeff2164c48456b"><td class="memItemLeft" align="right" valign="top">JEncoderAS5048bI2C&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2b91aa171683aefefbeff2164c48456b">tachEncoder</a> = JEncoderAS5048bI2C()</td></tr>
+<tr class="separator:a2b91aa171683aefefbeff2164c48456b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a44be3fe5ae48e9599d0d9a1ffb9374"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2a44be3fe5ae48e9599d0d9a1ffb9374">tach</a> = <a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a>(<a class="el" href="main_8cpp.html#a2b91aa171683aefefbeff2164c48456b">tachEncoder</a>, 1)</td></tr>
 <tr class="separator:a2a44be3fe5ae48e9599d0d9a1ffb9374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42e310b3d595fffa6195cc51d11e240"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac42e310b3d595fffa6195cc51d11e240">setpoint</a> = 40</td></tr>
 <tr class="separator:ac42e310b3d595fffa6195cc51d11e240"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,24 +105,6 @@ Variables</h2></td></tr>
 <tr class="separator:a693b350e8183597ad51eb9081cfa7db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a5e0fbaf9eeaaa2c2cea317ebe7551abb" name="a5e0fbaf9eeaaa2c2cea317ebe7551abb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e0fbaf9eeaaa2c2cea317ebe7551abb">&#9670;&nbsp;</a></span>jENCODER_MAKE_ISR_MACRO()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">jENCODER_MAKE_ISR_MACRO </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="main_8cpp.html#aaef92e6968c12b63fe7609bd847ccb7f">tachEncoder</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="afe461d27b9c48d5921c00d521181f12f" name="afe461d27b9c48d5921c00d521181f12f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe461d27b9c48d5921c00d521181f12f">&#9670;&nbsp;</a></span>loop()</h2>
 
@@ -276,21 +256,21 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a> tach = <a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a>(<a class="el" href="main_8cpp.html#aaef92e6968c12b63fe7609bd847ccb7f">tachEncoder</a>, 6)</td>
+          <td class="memname"><a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a> tach = <a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a>(<a class="el" href="main_8cpp.html#a2b91aa171683aefefbeff2164c48456b">tachEncoder</a>, 1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aaef92e6968c12b63fe7609bd847ccb7f" name="aaef92e6968c12b63fe7609bd847ccb7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaef92e6968c12b63fe7609bd847ccb7f">&#9670;&nbsp;</a></span>tachEncoder</h2>
+<a id="a2b91aa171683aefefbeff2164c48456b" name="a2b91aa171683aefefbeff2164c48456b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b91aa171683aefefbeff2164c48456b">&#9670;&nbsp;</a></span>tachEncoder</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">JEncoderSingleAttachInterrupt tachEncoder = JEncoderSingleAttachInterrupt(27, 1.0, false, 100000, 10000)</td>
+          <td class="memname">JEncoderAS5048bI2C tachEncoder = JEncoderAS5048bI2C()</td>
         </tr>
       </table>
 </div><div class="memdoc">
