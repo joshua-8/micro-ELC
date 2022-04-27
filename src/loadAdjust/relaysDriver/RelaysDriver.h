@@ -3,6 +3,7 @@
 #include <Arduino.h>
 /**
  * @brief  This class defines an interface for any class that can control an array of relays.
+ * @note I use the term "relay," loosely. Solid-state components that can switch power (transistors, and more specifically MOSFETS) are actually better since they can switch faster and last longer.
  */
 class RelaysDriver {
 public:
