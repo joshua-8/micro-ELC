@@ -45,8 +45,12 @@ public:
     {
         for (byte relay = 0; relay < N; relay++) {
             bool setState = ((bits >> (relay)) & 1);
-            digitalWrite(pin[relay], setState == active);
+            write(relay, setState);
         }
+    }
+    void write(byte relay, bool setState)
+    {
+        digitalWrite(pin[relay], setState == active);
     }
 };
 #endif

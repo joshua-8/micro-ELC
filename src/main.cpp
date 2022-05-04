@@ -46,6 +46,7 @@ void setup()
     Serial.begin(115200);
     loadAdjust.begin();
     // tachEncoder.setUpInterrupts(tachEncoder_jENCODER_ISR);
+    Wire.begin();
 
     pidControl.SetOutputLimits(-.5, .5);
     pidControl.SetSampleTimeUs(20000);
