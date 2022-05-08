@@ -65,10 +65,14 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_load_adjust_coarse_fine-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">LoadAdjustCoarseFine Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>combines a <a class="el" href="class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load.">LoadAdjust</a> that has discrete steps with another <a class="el" href="class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load.">LoadAdjust</a> to get more precision  
+ <a href="class_load_adjust_coarse_fine.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_load_adjust_coarse_fine_8h_source.html">LoadAdjustCoarseFine.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -76,7 +80,7 @@ Inheritance diagram for LoadAdjustCoarseFine:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_load_adjust_coarse_fine__inherit__graph.png" border="0" usemap="#a_load_adjust_coarse_fine_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_load_adjust_coarse_fine_inherit__map" id="a_load_adjust_coarse_fine_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,160,107"/>
+<area shape="rect" title="combines a LoadAdjust that has discrete steps with another LoadAdjust to get more precision" alt="" coords="5,80,160,107"/>
 <area shape="rect" href="class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load." alt="" coords="39,5,127,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -85,15 +89,16 @@ Collaboration diagram for LoadAdjustCoarseFine:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_load_adjust_coarse_fine__coll__graph.png" border="0" usemap="#a_load_adjust_coarse_fine_coll__map" alt="Collaboration graph"/></div>
 <map name="a_load_adjust_coarse_fine_coll__map" id="a_load_adjust_coarse_fine_coll__map">
-<area shape="rect" title=" " alt="" coords="5,109,160,136"/>
+<area shape="rect" title="combines a LoadAdjust that has discrete steps with another LoadAdjust to get more precision" alt="" coords="5,109,160,136"/>
 <area shape="rect" href="class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load." alt="" coords="39,5,127,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a35c74527f7e39d70df9c8c58a01ff1d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_adjust_coarse_fine.html#a35c74527f7e39d70df9c8c58a01ff1d9">LoadAdjustCoarseFine</a> (<a class="el" href="class_load_adjust.html">LoadAdjust</a> &amp;_coarse, <a class="el" href="class_load_adjust.html">LoadAdjust</a> &amp;_fine, uint8_t _numRelays, float _minRelayResistance, float _fineResistance)</td></tr>
-<tr class="separator:a35c74527f7e39d70df9c8c58a01ff1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a219deecc42884eaff64e42196e4c4b97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_adjust_coarse_fine.html#a219deecc42884eaff64e42196e4c4b97">LoadAdjustCoarseFine</a> (<a class="el" href="class_load_adjust.html">LoadAdjust</a> &amp;_coarse, <a class="el" href="class_load_adjust.html">LoadAdjust</a> &amp;_fine, uint8_t _numCoarseSteps, float _maxResistance, float _fineResistance)</td></tr>
+<tr class="memdesc:a219deecc42884eaff64e42196e4c4b97"><td class="mdescLeft">&#160;</td><td class="mdescRight">combines a <a class="el" href="class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load.">LoadAdjust</a> that has discrete steps with another <a class="el" href="class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load.">LoadAdjust</a> to get more precision  <a href="class_load_adjust_coarse_fine.html#a219deecc42884eaff64e42196e4c4b97">More...</a><br /></td></tr>
+<tr class="separator:a219deecc42884eaff64e42196e4c4b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2e01cf74b35d6cafaf4466b27d99cdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_adjust_coarse_fine.html#ab2e01cf74b35d6cafaf4466b27d99cdf">setLoad</a> (float load)</td></tr>
 <tr class="memdesc:ab2e01cf74b35d6cafaf4466b27d99cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a new value for the adjustable load  <a href="class_load_adjust_coarse_fine.html#ab2e01cf74b35d6cafaf4466b27d99cdf">More...</a><br /></td></tr>
 <tr class="separator:ab2e01cf74b35d6cafaf4466b27d99cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,10 +118,25 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aca3be3292c52342741d4acfc5864b997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f9abcf6f60dbe8c048894049bcbd1fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_load_adjust.html">LoadAdjust</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_adjust_coarse_fine.html#a6f9abcf6f60dbe8c048894049bcbd1fb">fine</a></td></tr>
 <tr class="separator:a6f9abcf6f60dbe8c048894049bcbd1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:af5149b76a9ce0385ced25f97dff3b883"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_adjust_coarse_fine.html#af5149b76a9ce0385ced25f97dff3b883">numCoarseSteps</a></td></tr>
+<tr class="separator:af5149b76a9ce0385ced25f97dff3b883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adacf21393fa62f79ad570c4a8b9ffc1a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_adjust_coarse_fine.html#adacf21393fa62f79ad570c4a8b9ffc1a">maxResistance</a></td></tr>
+<tr class="separator:adacf21393fa62f79ad570c4a8b9ffc1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1cf754595c15c6e0cb4957737a85435"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_adjust_coarse_fine.html#ac1cf754595c15c6e0cb4957737a85435">fineResistance</a></td></tr>
+<tr class="separator:ac1cf754595c15c6e0cb4957737a85435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dcc9efdf3e255666783a806ae3f215f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_adjust_coarse_fine.html#a1dcc9efdf3e255666783a806ae3f215f">relayValue</a> = 0</td></tr>
+<tr class="separator:a1dcc9efdf3e255666783a806ae3f215f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb9858b626a9c90c28ecb4d60817742"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_load_adjust_coarse_fine.html#accb9858b626a9c90c28ecb4d60817742">relayStepsInFine</a></td></tr>
+<tr class="separator:accb9858b626a9c90c28ecb4d60817742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a35c74527f7e39d70df9c8c58a01ff1d9" name="a35c74527f7e39d70df9c8c58a01ff1d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35c74527f7e39d70df9c8c58a01ff1d9">&#9670;&nbsp;</a></span>LoadAdjustCoarseFine()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >combines a <a class="el" href="class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load.">LoadAdjust</a> that has discrete steps with another <a class="el" href="class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load.">LoadAdjust</a> to get more precision </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a219deecc42884eaff64e42196e4c4b97" name="a219deecc42884eaff64e42196e4c4b97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a219deecc42884eaff64e42196e4c4b97">&#9670;&nbsp;</a></span>LoadAdjustCoarseFine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,13 +160,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>_numRelays</em>, </td>
+          <td class="paramname"><em>_numCoarseSteps</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>_minRelayResistance</em>, </td>
+          <td class="paramname"><em>_maxResistance</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -166,6 +186,18 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>combines a <a class="el" href="class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load.">LoadAdjust</a> that has discrete steps with another <a class="el" href="class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load.">LoadAdjust</a> to get more precision </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_coarse</td><td>reference to <a class="el" href="class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load.">LoadAdjust</a> object that has discrete steps (the coarse adjust) </td></tr>
+    <tr><td class="paramname">_fine</td><td>reference to <a class="el" href="class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load.">LoadAdjust</a> object that can be used for a fine adjust </td></tr>
+    <tr><td class="paramname">_numCoarseSteps</td><td>number of discrete steps the coarse adjust can make </td></tr>
+    <tr><td class="paramname">_maxResistance</td><td>max resistance / lowest load, the value of the first step </td></tr>
+    <tr><td class="paramname">_fineResistance</td><td>max resistance of fine adjust, used to find how many coarse steps the fine adjust can cover </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -260,6 +292,116 @@ Public Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="class_load_adjust.html">LoadAdjust</a>&amp; LoadAdjustCoarseFine::fine</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac1cf754595c15c6e0cb4957737a85435" name="ac1cf754595c15c6e0cb4957737a85435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1cf754595c15c6e0cb4957737a85435">&#9670;&nbsp;</a></span>fineResistance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float LoadAdjustCoarseFine::fineResistance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adacf21393fa62f79ad570c4a8b9ffc1a" name="adacf21393fa62f79ad570c4a8b9ffc1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adacf21393fa62f79ad570c4a8b9ffc1a">&#9670;&nbsp;</a></span>maxResistance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float LoadAdjustCoarseFine::maxResistance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5149b76a9ce0385ced25f97dff3b883" name="af5149b76a9ce0385ced25f97dff3b883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5149b76a9ce0385ced25f97dff3b883">&#9670;&nbsp;</a></span>numCoarseSteps</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t LoadAdjustCoarseFine::numCoarseSteps</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="accb9858b626a9c90c28ecb4d60817742" name="accb9858b626a9c90c28ecb4d60817742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb9858b626a9c90c28ecb4d60817742">&#9670;&nbsp;</a></span>relayStepsInFine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float LoadAdjustCoarseFine::relayStepsInFine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1dcc9efdf3e255666783a806ae3f215f" name="a1dcc9efdf3e255666783a806ae3f215f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dcc9efdf3e255666783a806ae3f215f">&#9670;&nbsp;</a></span>relayValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t LoadAdjustCoarseFine::relayValue = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
