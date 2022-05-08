@@ -1,10 +1,10 @@
-#ifndef _LOAD_ADJUST_RELAY_H_
-#define _LOAD_ADJUST_RELAY_H_
-#include "LoadAdjust.h"
-#include "relaysDriver/RelaysDriver.h"
+#ifndef _LOAD_ADJUST_RELAY_PARALLEL_BINARY_H_
+#define _LOAD_ADJUST_RELAY_PARALLEL_BINARY_H_
+#include "../LoadAdjust.h"
+#include "RelaysDriver.h"
 #include <Arduino.h>
 /**
- * @brief load adjustor that switches
+ * @brief load adjustor that switches relays or other switches on and off in a binary pattern
  * @note  this is a template class, N is how many relays are used.
  */
 template <byte N>

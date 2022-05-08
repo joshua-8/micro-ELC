@@ -12,8 +12,10 @@
  * */
 
 // include libraries and header files here:
-#include "loadAdjust/LoadAdjustRelayParallelBinary.h"
-#include "loadAdjust/relaysDriver/RelaysDriverBasic.h"
+#include "loadAdjust/LoadAdjustCoarseFine.h"
+#include "loadAdjust/analog/LoadAdjustAnalogWrite.h"
+#include "loadAdjust/relays/LoadAdjustRelayParallelBinary.h"
+#include "loadAdjust/relays/RelaysDriverBasic.h"
 #include "measurement/TachometerJEncoder.h"
 #include <Arduino.h>
 #include <QuickPID.h>
@@ -27,11 +29,11 @@ const byte numRelays = 5;
 // declare instances of objects here:
 RelaysDriverBasic<numRelays> relayDriver = RelaysDriverBasic<numRelays>(LOW, { 21, 22, 19, 23, 26 }); // { 16, 17, 18, 19, 21, 22, 23, 26 });
 LoadAdjustRelayParallelBinary<numRelays> loadAdjust = LoadAdjustRelayParallelBinary<numRelays>(relayDriver);
+LoadAdjustAnalogWrite fineLoadAdjust = LoadAdjustAnalogWrite(18);
 
-// JEncoderSingleAttachInterrupt tachEncoder = JEncoderSingleAttachInterrupt(27, 1.0, false, 100000, 10000); // pin, dist per count, reverse, slowest interval us, switchbounce us
-// jENCODER_MAKE_ISR_MACRO(tachEncoder);
-JEncoderAS5048bI2C tachEncoder = JEncoderAS5048bI2C();
-TachometerJEncoder tach = TachometerJEncoder(tachEncoder, 1);
+JEncoderSingleAttachInterrupt tachEncoder = JEncoderSingleAttachInterrupt(27, 1.0, false, 300000, 1000); // pin, dist per count, reverse, slowest interval us, switchbounce us
+jENCODER_MAKE_ISR_MACRO(tachEncoder);
+TachometerJEncoder tach = TachometerJEncoder(tachEncoder, 4);
 
 float setpoint = 40;
 float input = 0;
@@ -45,12 +47,10 @@ void setup()
 {
     Serial.begin(115200);
     loadAdjust.begin();
-    // tachEncoder.setUpInterrupts(tachEncoder_jENCODER_ISR);
-    Wire.begin();
-
+    tachEncoder.setUpInterrupts(tachEncoder_jENCODER_ISR);
     pidControl.SetOutputLimits(-.5, .5);
     pidControl.SetSampleTimeUs(20000);
-    pidControl.SetTunings(.013, .013, 0);
+    pidControl.SetTunings(.015, .025, 0);
     pidControl.SetMode(QuickPID::Control::automatic); // turn on pid
 }
 
