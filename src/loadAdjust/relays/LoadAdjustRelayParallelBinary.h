@@ -1,5 +1,5 @@
-#ifndef _LOAD_ADJUST_RELAY_PARALLEL_BINARY_H_
-#define _LOAD_ADJUST_RELAY_PARALLEL_BINARY_H_
+#ifndef LOAD_ADJUST_RELAY_PARALLEL_BINARY_H
+#define LOAD_ADJUST_RELAY_PARALLEL_BINARY_H
 #include "../LoadAdjust.h"
 #include "RelaysDriver.h"
 #include <Arduino.h>
