@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['output_0',['output',['../main_8cpp.html#a1084d7e47a5571b229a33ad347cc9453',1,'main.cpp']]]
+  ['loadadjust_0',['loadAdjust',['../main_8cpp.html#a514177dc5b486bc3a5243407266b3059',1,'main.cpp']]]
 ];

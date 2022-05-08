@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['input_0',['input',['../main_8cpp.html#a0c92b536886cab3f637dce4b7a0956bd',1,'main.cpp']]]
+  ['fine_0',['fine',['../class_load_adjust_coarse_fine.html#a6f9abcf6f60dbe8c048894049bcbd1fb',1,'LoadAdjustCoarseFine']]],
+  ['fineloadadjust_1',['fineLoadAdjust',['../main_8cpp.html#a33a8c18ce24e9a44aeadf4952260e19e',1,'main.cpp']]]
 ];

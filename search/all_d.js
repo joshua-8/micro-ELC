@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['tach_0',['tach',['../main_8cpp.html#a2a44be3fe5ae48e9599d0d9a1ffb9374',1,'main.cpp']]],
-  ['tachencoder_1',['tachEncoder',['../main_8cpp.html#a2b91aa171683aefefbeff2164c48456b',1,'main.cpp']]],
-  ['tachometerjencoder_2',['TachometerJEncoder',['../class_tachometer_j_encoder.html',1,'TachometerJEncoder'],['../class_tachometer_j_encoder.html#aee1142cb785acc9071e7ae90d5850e8e',1,'TachometerJEncoder::TachometerJEncoder()']]],
-  ['tachometerjencoder_2eh_3',['TachometerJEncoder.h',['../_tachometer_j_encoder_8h.html',1,'']]]
+  ['pidcontrol_0',['pidControl',['../main_8cpp.html#a693b350e8183597ad51eb9081cfa7db3',1,'main.cpp']]],
+  ['pin_1',['pin',['../class_load_adjust_analog_write.html#a05b3e79de1451d575a250eae1f9291db',1,'LoadAdjustAnalogWrite::pin()'],['../class_relays_driver_basic.html#a953ccb683aedb09c13577071ef55dafd',1,'RelaysDriverBasic::pin()']]]
 ];

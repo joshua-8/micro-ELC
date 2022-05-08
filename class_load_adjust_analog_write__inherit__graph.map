@@ -1,0 +1,4 @@
+<map id="LoadAdjustAnalogWrite" name="LoadAdjustAnalogWrite">
+<area shape="rect" id="node1" title="load adjustor that uses analogWrite() to adjust a PWMable load" alt="" coords="5,80,164,107"/>
+<area shape="rect" id="node2" href="$class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load." alt="" coords="41,5,129,32"/>
+</map>

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['main_2ecpp_0',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['measurement_1',['Measurement',['../class_measurement.html',1,'']]],
-  ['measurement_2eh_2',['Measurement.h',['../_measurement_8h.html',1,'']]],
-  ['micro_2delc_3',['micro-ELC',['../index.html',1,'']]]
+  ['input_0',['input',['../main_8cpp.html#a0c92b536886cab3f637dce4b7a0956bd',1,'main.cpp']]],
+  ['invert_1',['invert',['../class_load_adjust_analog_write.html#a17596f7934a30cc15242e36bf7a08b77',1,'LoadAdjustAnalogWrite']]]
 ];
