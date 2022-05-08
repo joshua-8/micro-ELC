@@ -91,10 +91,12 @@ Variables</h2></td></tr>
 <tr class="separator:adf969b76cbdccc6d59013f3ed8e291ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf8b502aa1264686ce2f3ad265433aee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt; <a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adf8b502aa1264686ce2f3ad265433aee">relayDriver</a> = <a class="el" href="class_relays_driver_basic.html">RelaysDriverBasic</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(LOW, { 21, 22, 19, 23, 26 })</td></tr>
 <tr class="separator:adf8b502aa1264686ce2f3ad265433aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a514177dc5b486bc3a5243407266b3059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt; <a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a514177dc5b486bc3a5243407266b3059">loadAdjust</a> = <a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(<a class="el" href="main_8cpp.html#adf8b502aa1264686ce2f3ad265433aee">relayDriver</a>)</td></tr>
-<tr class="separator:a514177dc5b486bc3a5243407266b3059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7cc9fe2888cc1f2ddc293cc3fc10402"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt; <a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae7cc9fe2888cc1f2ddc293cc3fc10402">coarseLoadAdjust</a> = <a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(<a class="el" href="main_8cpp.html#adf8b502aa1264686ce2f3ad265433aee">relayDriver</a>)</td></tr>
+<tr class="separator:ae7cc9fe2888cc1f2ddc293cc3fc10402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33a8c18ce24e9a44aeadf4952260e19e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_load_adjust_analog_write.html">LoadAdjustAnalogWrite</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a33a8c18ce24e9a44aeadf4952260e19e">fineLoadAdjust</a> = <a class="el" href="class_load_adjust_analog_write.html">LoadAdjustAnalogWrite</a>(18)</td></tr>
 <tr class="separator:a33a8c18ce24e9a44aeadf4952260e19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad041dfb5d653536ea99cbf979c28097d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_load_adjust_coarse_fine.html">LoadAdjustCoarseFine</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad041dfb5d653536ea99cbf979c28097d">loadAdjust</a> = <a class="el" href="class_load_adjust_coarse_fine.html">LoadAdjustCoarseFine</a>(<a class="el" href="main_8cpp.html#ae7cc9fe2888cc1f2ddc293cc3fc10402">coarseLoadAdjust</a>,<a class="el" href="main_8cpp.html#a33a8c18ce24e9a44aeadf4952260e19e">fineLoadAdjust</a>)</td></tr>
+<tr class="separator:ad041dfb5d653536ea99cbf979c28097d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaef92e6968c12b63fe7609bd847ccb7f"><td class="memItemLeft" align="right" valign="top">JEncoderSingleAttachInterrupt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aaef92e6968c12b63fe7609bd847ccb7f">tachEncoder</a> = JEncoderSingleAttachInterrupt(27, 1.0, false, 300000, 1000)</td></tr>
 <tr class="separator:aaef92e6968c12b63fe7609bd847ccb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a44be3fe5ae48e9599d0d9a1ffb9374"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a2a44be3fe5ae48e9599d0d9a1ffb9374">tach</a> = <a class="el" href="class_tachometer_j_encoder.html">TachometerJEncoder</a>(<a class="el" href="main_8cpp.html#aaef92e6968c12b63fe7609bd847ccb7f">tachEncoder</a>, 4)</td></tr>
@@ -166,6 +168,20 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="ae7cc9fe2888cc1f2ddc293cc3fc10402" name="ae7cc9fe2888cc1f2ddc293cc3fc10402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7cc9fe2888cc1f2ddc293cc3fc10402">&#9670;&nbsp;</a></span>coarseLoadAdjust</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt; coarseLoadAdjust = <a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(<a class="el" href="main_8cpp.html#adf8b502aa1264686ce2f3ad265433aee">relayDriver</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a33a8c18ce24e9a44aeadf4952260e19e" name="a33a8c18ce24e9a44aeadf4952260e19e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33a8c18ce24e9a44aeadf4952260e19e">&#9670;&nbsp;</a></span>fineLoadAdjust</h2>
 
@@ -194,14 +210,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a514177dc5b486bc3a5243407266b3059" name="a514177dc5b486bc3a5243407266b3059"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a514177dc5b486bc3a5243407266b3059">&#9670;&nbsp;</a></span>loadAdjust</h2>
+<a id="ad041dfb5d653536ea99cbf979c28097d" name="ad041dfb5d653536ea99cbf979c28097d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad041dfb5d653536ea99cbf979c28097d">&#9670;&nbsp;</a></span>loadAdjust</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt; loadAdjust = <a class="el" href="class_load_adjust_relay_parallel_binary.html">LoadAdjustRelayParallelBinary</a>&lt;<a class="el" href="main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef">numRelays</a>&gt;(<a class="el" href="main_8cpp.html#adf8b502aa1264686ce2f3ad265433aee">relayDriver</a>)</td>
+          <td class="memname"><a class="el" href="class_load_adjust_coarse_fine.html">LoadAdjustCoarseFine</a> loadAdjust = <a class="el" href="class_load_adjust_coarse_fine.html">LoadAdjustCoarseFine</a>(<a class="el" href="main_8cpp.html#ae7cc9fe2888cc1f2ddc293cc3fc10402">coarseLoadAdjust</a>,<a class="el" href="main_8cpp.html#a33a8c18ce24e9a44aeadf4952260e19e">fineLoadAdjust</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
