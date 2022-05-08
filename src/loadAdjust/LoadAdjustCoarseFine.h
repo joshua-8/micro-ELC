@@ -25,7 +25,7 @@ public:
      * @param  _fine: reference to LoadAdjust object that can be used for a fine adjust
      * @param  _numCoarseSteps: number of discrete steps the coarse adjust can make
      * @param  _maxResistance: max resistance / lowest load, the value of the first step
-     * @param  _fineResistance: max resistance of fine adjust, used to find how many coarse steps the fine adjust can cover
+     * @param  _fineResistance: max resistance of fine adjust, used to find how many coarse steps the fine adjust can cover, can be any value, but ideally causes a few coarse steps worth of load
      */
     LoadAdjustCoarseFine(LoadAdjust& _coarse, LoadAdjust& _fine, uint8_t _numCoarseSteps, float _maxResistance, float _fineResistance)
         : coarse(_coarse)
