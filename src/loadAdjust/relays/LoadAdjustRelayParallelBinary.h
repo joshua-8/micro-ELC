@@ -11,6 +11,10 @@ template <byte N>
 class LoadAdjustRelayParallelBinary : public LoadAdjust {
 public:
     RelaysDriver& driver;
+    /**
+     * @brief  load adjustor that switches relays or other switches on and off in a binary patter
+     * @param  _relaysDriver: RelaysDriver for controlling relays or other switches
+     */
     LoadAdjustRelayParallelBinary(RelaysDriver& _relaysDriver)
         : driver(_relaysDriver)
     {

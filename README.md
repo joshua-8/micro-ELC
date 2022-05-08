@@ -6,7 +6,7 @@ WORK IN PROGRESS!
 
 This software is for making an Electronic Load Controller.
 
-It can use various methods for adjusting its load in order to keep the frequency of a synchronous generator constant.
+It controls an array of resistors to keep the frequency of a synchronous generator constant.
 
 Use PlatformIO to upload to an esp32 dev module
 

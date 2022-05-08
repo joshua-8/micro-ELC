@@ -15,6 +15,11 @@ private:
 
 public:
     JEncoder& encoder;
+    /**
+     * @brief  This class measures the speed of a generator using any JEncoder from the JMotor library
+     * @param  _encoder: reference to JEncoder object
+     * @param  numSavedForSmoothing: default (0) average this many readings
+     */
     TachometerJEncoder(JEncoder& _encoder, uint16_t numSavedForSmoothing = 0)
         : smoother(numSavedForSmoothing + 1)
         , encoder(_encoder)

@@ -1,7 +1,7 @@
 /**
  * This software is for making an Electronic Load Controller.
  *
- * It controlls an array of resistors to keep the frequency of a synchronous generator constant.
+ * It controls an array of resistors to keep the frequency of a synchronous generator constant.
  *
  * https://github.com/joshua-8/micro-ELC
  *
@@ -30,7 +30,7 @@ const byte numRelays = 5;
 RelaysDriverBasic<numRelays> relayDriver = RelaysDriverBasic<numRelays>(LOW, { 21, 22, 19, 23, 26 }); // { 16, 17, 18, 19, 21, 22, 23, 26 });
 LoadAdjustRelayParallelBinary<numRelays> coarseLoadAdjust = LoadAdjustRelayParallelBinary<numRelays>(relayDriver);
 LoadAdjustAnalogWrite fineLoadAdjust = LoadAdjustAnalogWrite(18);
-LoadAdjustCoarseFine loadAdjust = LoadAdjustCoarseFine(coarseLoadAdjust, fineLoadAdjust, 1, 1, 1);
+LoadAdjustCoarseFine loadAdjust = LoadAdjustCoarseFine(coarseLoadAdjust, fineLoadAdjust, pow(2, numRelays), 2, 10); // numCoarseSteps minRelayResistance fineResistance
 JEncoderSingleAttachInterrupt tachEncoder = JEncoderSingleAttachInterrupt(27, 1.0, false, 300000, 1000); // pin, dist per count, reverse, slowest interval us, switchbounce us
 jENCODER_MAKE_ISR_MACRO(tachEncoder);
 TachometerJEncoder tach = TachometerJEncoder(tachEncoder, 4);
@@ -46,7 +46,7 @@ QuickPID pidControl = QuickPID(&input, &output, &setpoint);
 void setup()
 {
     Serial.begin(115200);
-    coarseLoadAdjust.begin();
+    loadAdjust.begin();
     tachEncoder.setUpInterrupts(tachEncoder_jENCODER_ISR);
     pidControl.SetOutputLimits(-.5, .5);
     pidControl.SetSampleTimeUs(20000);
@@ -62,7 +62,7 @@ void loop()
     tach.run();
     input = tach.getMeasurement();
     pidControl.Compute();
-    coarseLoadAdjust.setLoad(output + .5);
+    loadAdjust.setLoad(output + .5);
 
     Serial.print(input / setpoint);
     Serial.print(",");

@@ -9,6 +9,11 @@ class LoadAdjustAnalogWrite : public LoadAdjust {
 public:
     byte pin;
     bool invert;
+    /**
+     * @brief  load adjustor that uses analogWrite() to adjust a PWMable load
+     * @param  _pin: PWM capable pin to output signal to
+     * @param  _invert: (default false) set true if the load decreases as the duty cycle increses
+     */
     LoadAdjustAnalogWrite(byte _pin, bool _invert = false)
     {
         pin = _pin;
