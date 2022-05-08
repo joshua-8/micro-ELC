@@ -30,7 +30,7 @@ const byte numRelays = 5;
 RelaysDriverBasic<numRelays> relayDriver = RelaysDriverBasic<numRelays>(LOW, { 21, 22, 19, 23, 26 }); // { 16, 17, 18, 19, 21, 22, 23, 26 });
 LoadAdjustRelayParallelBinary<numRelays> coarseLoadAdjust = LoadAdjustRelayParallelBinary<numRelays>(relayDriver);
 LoadAdjustAnalogWrite fineLoadAdjust = LoadAdjustAnalogWrite(18);
-LoadAdjustCoarseFine loadAdjust = LoadAdjustCoarseFine(coarseLoadAdjust,fineLoadAdjust);
+LoadAdjustCoarseFine loadAdjust = LoadAdjustCoarseFine(coarseLoadAdjust, fineLoadAdjust, 1, 1, 1);
 JEncoderSingleAttachInterrupt tachEncoder = JEncoderSingleAttachInterrupt(27, 1.0, false, 300000, 1000); // pin, dist per count, reverse, slowest interval us, switchbounce us
 jENCODER_MAKE_ISR_MACRO(tachEncoder);
 TachometerJEncoder tach = TachometerJEncoder(tachEncoder, 4);
