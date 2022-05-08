@@ -17,10 +17,13 @@ private:
     float relayStepsInFine = pow(2, numRelays) / fineResistance;
 
 public:
-    LoadAdjustCoarseFine(LoadAdjust& _coarse, LoadAdjust& _fine)
+    LoadAdjustCoarseFine(LoadAdjust& _coarse, LoadAdjust& _fine, uint8_t _numRelays, float _minRelayResistance, float _fineResistance)
         : coarse(_coarse)
         , fine(_fine)
     {
+        numRelays = _numRelays;
+        minRelayResistance = _minRelayResistance;
+        fineResistance = _fineResistance;
     }
     void setLoad(float load)
     {
