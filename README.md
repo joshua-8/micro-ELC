@@ -1,6 +1,6 @@
 # micro-ELC
 
-[![github actions badge](https://github.com/joshua-8/micro-ELC/actions/workflows/CI.yml/badge.svg)](https://github.com/joshua-8/micro-ELC/CIplatformio)
+[![github actions badge](https://github.com/joshua-8/micro-ELC/actions/workflows/CI.yml/badge.svg)](https://github.com/joshua-8/micro-ELC/actions/workflows/CI.yml)
 
 WORK IN PROGRESS!
 
