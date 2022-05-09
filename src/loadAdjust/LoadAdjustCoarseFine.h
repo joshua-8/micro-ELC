@@ -23,7 +23,7 @@ public:
      * @brief  combines a LoadAdjust that has discrete steps with another LoadAdjust to get more precision
      * @param  _coarse: reference to LoadAdjust object that has discrete steps (the coarse adjust)
      * @param  _fine: reference to LoadAdjust object that can be used for a fine adjust
-     * @param  _numCoarseSteps: number of discrete steps the coarse adjust can make
+     * @param  _numCoarseSteps: number of discrete steps the coarse adjust can make (two relays can make 4 different combos)
      * @param  _maxResistance: max resistance / lowest load, the value of the first step
      * @param  _fineResistance: max resistance of fine adjust, used to find how many coarse steps the fine adjust can cover, can be any value, but ideally causes a few coarse steps worth of load
      */
@@ -39,9 +39,9 @@ public:
     void setLoad(float load)
     {
         // the fine adjust adds extra load capability, so load is adjusted from [0,1] to a range that exceeds 1.0 to use full capacity
-        load = constrain(load, 0.0, 1.0) * (1.0 + relayStepsInFine / numCoarseSteps);
+        load = constrain(load, 0.0, 1.0) * (1.0 + relayStepsInFine / (numCoarseSteps));
         // if relays could be turned on fractionally ideally we'd want this value
-        float fractionalRelayValue = (float)load * numCoarseSteps;
+        float fractionalRelayValue = (float)load * (numCoarseSteps);
 
         // change relayValue if necessary
         while (relayValue >= fractionalRelayValue && relayValue > 0) {
@@ -53,7 +53,8 @@ public:
             relayValue++;
         }
         float leftover = fractionalRelayValue - relayValue; // the fine adjust needs to make up for this much
-        coarse.setLoad(relayValue);
+
+        coarse.setLoad((float)relayValue / (numCoarseSteps - 1) + 0.5 / numCoarseSteps); // map to range of 0-1, hitting center of steps
         fine.setLoad(leftover / relayStepsInFine);
     }
     void begin()

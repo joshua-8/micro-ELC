@@ -28,14 +28,14 @@ const byte numRelays = 5;
 
 // declare instances of objects here:
 RelaysDriverBasic<numRelays> relayDriver = RelaysDriverBasic<numRelays>(LOW, { 21, 22, 19, 23, 26 }); // { 16, 17, 18, 19, 21, 22, 23, 26 });
-LoadAdjustRelayParallelBinary<numRelays> coarseLoadAdjust = LoadAdjustRelayParallelBinary<numRelays>(relayDriver);
+LoadAdjustRelayParallelBinary<numRelays> coarseLoadAdjust = LoadAdjustRelayParallelBinary<numRelays>(relayDriver, false);
 LoadAdjustAnalogWrite fineLoadAdjust = LoadAdjustAnalogWrite(18);
-LoadAdjustCoarseFine loadAdjust = LoadAdjustCoarseFine(coarseLoadAdjust, fineLoadAdjust, pow(2, numRelays), 2, 10); // numCoarseSteps minRelayResistance fineResistance
-JEncoderSingleAttachInterrupt tachEncoder = JEncoderSingleAttachInterrupt(27, 1.0, false, 300000, 1000); // pin, dist per count, reverse, slowest interval us, switchbounce us
-jENCODER_MAKE_ISR_MACRO(tachEncoder);
-TachometerJEncoder tach = TachometerJEncoder(tachEncoder, 4);
+LoadAdjustCoarseFine loadAdjust = LoadAdjustCoarseFine(coarseLoadAdjust, fineLoadAdjust, pow(2, numRelays), 32, 10); // numCoarseSteps maxResistance fineResistance
+JEncoderAS5048bI2C tachEncoder = JEncoderAS5048bI2C(); // JEncoderSingleAttachInterrupt(27, 1.0, false, 100000, 10000); // pin, dist per count, reverse, slowest interval us, switchbounce us
+// jENCODER_MAKE_ISR_MACRO(tachEncoder);
+TachometerJEncoder tach = TachometerJEncoder(tachEncoder, 3); // num to average
 
-float setpoint = 40;
+float setpoint = .5;
 float input = 0;
 float output = 0;
 QuickPID pidControl = QuickPID(&input, &output, &setpoint);
@@ -47,10 +47,12 @@ void setup()
 {
     Serial.begin(115200);
     loadAdjust.begin();
-    tachEncoder.setUpInterrupts(tachEncoder_jENCODER_ISR);
+    // tachEncoder.setUpInterrupts(tachEncoder_jENCODER_ISR);
+    Wire.begin(32, 33);
     pidControl.SetOutputLimits(-.5, .5);
     pidControl.SetSampleTimeUs(20000);
-    pidControl.SetTunings(.015, .025, 0);
+    pidControl.SetTunings(1.80, 4.0, 0);
+    pidControl.SetControllerDirection(QuickPID::Action::reverse); // increasing the load slows down the motor
     pidControl.SetMode(QuickPID::Control::automatic); // turn on pid
 }
 
