@@ -28,7 +28,7 @@ const byte numRelays = 5;
 
 // declare instances of objects here:
 RelaysDriverBasic<numRelays> relayDriver = RelaysDriverBasic<numRelays>(LOW, { 21, 22, 19, 23, 26 }); // { 16, 17, 18, 19, 21, 22, 23, 26 });
-LoadAdjustRelayParallelBinary<numRelays> coarseLoadAdjust = LoadAdjustRelayParallelBinary<numRelays>(relayDriver, false);
+LoadAdjustRelayParallelBinary<numRelays> coarseLoadAdjust = LoadAdjustRelayParallelBinary<numRelays>(relayDriver, false); //driver, activeRelaysIncreaseLoad (true if resistors are through NO, false if through NC)
 LoadAdjustAnalogWrite fineLoadAdjust = LoadAdjustAnalogWrite(18);
 LoadAdjustCoarseFine loadAdjust = LoadAdjustCoarseFine(coarseLoadAdjust, fineLoadAdjust, pow(2, numRelays), 32, 10); // numCoarseSteps maxResistance fineResistance
 JEncoderAS5048bI2C tachEncoder = JEncoderAS5048bI2C(); // JEncoderSingleAttachInterrupt(27, 1.0, false, 100000, 10000); // pin, dist per count, reverse, slowest interval us, switchbounce us

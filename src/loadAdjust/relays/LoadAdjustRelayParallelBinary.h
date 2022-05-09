@@ -15,7 +15,7 @@ public:
     /**
      * @brief  load adjustor that switches relays or other switches on and off in a binary pattern
      * @param  _relaysDriver: RelaysDriver for controlling relays or other switches
-     * @param  _activeRelaysIncreaseLoad: (bool)
+     * @param  _activeRelaysIncreaseLoad: (bool) true if resistors are through NO, false if through NC relay terminals
      */
     LoadAdjustRelayParallelBinary(RelaysDriver& _relaysDriver, bool _activeRelaysIncreaseLoad = false)
         : driver(_relaysDriver)
@@ -25,7 +25,7 @@ public:
     void setLoad(float load)
     {
         uint16_t setting = constrain(load, 0.0, 1.0) * ((1 << N) - 1); // convert [0.0, 1.0] to [0, 2^n-1]
-        if (!activeRelaysIncreaseLoad) { // if active relays decrease the load (open the circuit to a resistor)
+        if (!activeRelaysIncreaseLoad) { // if active relays decrease the load (open the circuit to a resistor) (activeRelaysIncreaseLoad==false)
             setting = ~setting; // then a load of 1 should turn off all relays, and a load of 0 should activate all the relays
         }
         driver.set(setting);
