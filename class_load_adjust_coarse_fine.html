@@ -192,7 +192,7 @@ Protected Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">_coarse</td><td>reference to <a class="el" href="class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load.">LoadAdjust</a> object that has discrete steps (the coarse adjust) </td></tr>
     <tr><td class="paramname">_fine</td><td>reference to <a class="el" href="class_load_adjust.html" title="This class defines an interface for any type of adjustable electrical load.">LoadAdjust</a> object that can be used for a fine adjust </td></tr>
-    <tr><td class="paramname">_numCoarseSteps</td><td>number of discrete steps the coarse adjust can make </td></tr>
+    <tr><td class="paramname">_numCoarseSteps</td><td>number of discrete steps the coarse adjust can make (two relays can make 4 different combos) </td></tr>
     <tr><td class="paramname">_maxResistance</td><td>max resistance / lowest load, the value of the first step </td></tr>
     <tr><td class="paramname">_fineResistance</td><td>max resistance of fine adjust, used to find how many coarse steps the fine adjust can cover, can be any value, but ideally causes a few coarse steps worth of load </td></tr>
   </table>

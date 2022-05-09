@@ -1,12 +1,7 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['relaydriver_1',['relayDriver',['../main_8cpp.html#adf8b502aa1264686ce2f3ad265433aee',1,'main.cpp']]],
-  ['relaysdriver_2',['RelaysDriver',['../class_relays_driver.html',1,'']]],
-  ['relaysdriver_2eh_3',['RelaysDriver.h',['../_relays_driver_8h.html',1,'']]],
-  ['relaysdriverbasic_4',['RelaysDriverBasic',['../class_relays_driver_basic.html',1,'RelaysDriverBasic&lt; N &gt;'],['../class_relays_driver_basic.html#a8a239653fb8fd98b2d647b62739d3da8',1,'RelaysDriverBasic::RelaysDriverBasic()']]],
-  ['relaysdriverbasic_2eh_5',['RelaysDriverBasic.h',['../_relays_driver_basic_8h.html',1,'']]],
-  ['relaystepsinfine_6',['relayStepsInFine',['../class_load_adjust_coarse_fine.html#accb9858b626a9c90c28ecb4d60817742',1,'LoadAdjustCoarseFine']]],
-  ['relayvalue_7',['relayValue',['../class_load_adjust_coarse_fine.html#a1dcc9efdf3e255666783a806ae3f215f',1,'LoadAdjustCoarseFine']]],
-  ['run_8',['run',['../class_measurement.html#aec68c0e7db76fd7bc70bdc389325e20a',1,'Measurement::run()'],['../class_tachometer_j_encoder.html#a499d846b8d4aaebf7637dcd585bb5575',1,'TachometerJEncoder::run()']]]
+  ['set_0',['set',['../class_relays_driver.html#af38f82cdf6175693559a8a117ece2290',1,'RelaysDriver::set()'],['../class_relays_driver_basic.html#ad1bb2598627e0fcf9bfc4feeb4988324',1,'RelaysDriverBasic::set()']]],
+  ['setload_1',['setLoad',['../class_load_adjust_analog_write.html#a5f73047a63d739253c4e9961a4ead1bd',1,'LoadAdjustAnalogWrite::setLoad()'],['../class_load_adjust.html#acda9c788da391f8e121bb33eaa7ab27a',1,'LoadAdjust::setLoad()'],['../class_load_adjust_coarse_fine.html#ab2e01cf74b35d6cafaf4466b27d99cdf',1,'LoadAdjustCoarseFine::setLoad()'],['../class_load_adjust_relay_parallel_binary.html#a0d67aec4a6e74e0a7d41894c26e4c5ae',1,'LoadAdjustRelayParallelBinary::setLoad()']]],
+  ['setpoint_2',['setpoint',['../main_8cpp.html#ac42e310b3d595fffa6195cc51d11e240',1,'main.cpp']]],
+  ['setup_3',['setup',['../main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d',1,'main.cpp']]]
 ];
