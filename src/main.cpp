@@ -35,7 +35,7 @@ JEncoderAS5048bI2C tachEncoder = JEncoderAS5048bI2C(); // JEncoderSingleAttachIn
 // jENCODER_MAKE_ISR_MACRO(tachEncoder);
 TachometerJEncoder tach = TachometerJEncoder(tachEncoder, 3); // num to average
 
-float setpoint = .5;
+float setpoint = .5; // RPS (for AS5048 encoder)
 float input = 0;
 float output = 0;
 QuickPID pidControl = QuickPID(&input, &output, &setpoint);

@@ -1,6 +1,8 @@
 #ifndef MEASUREMENT_H
 #define MEASUREMENT_H
-// Defines an interface for measuring the frequency, rotational speed, or voltage of a generator to use as the input to the control loop.
+/**
+ * @brief Defines an interface for measuring the frequency, rotational speed, or voltage of a generator to use as the input to the control loop.
+ */
 class Measurement {
 public:
     /**
