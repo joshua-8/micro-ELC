@@ -9,12 +9,6 @@
 		"files.associations": {
 			"*.json": "jsonc",
 			"initializer_list": "cpp"
-		},
-		"cSpell.words": [
-			"lockfiles",
-			"mosfets",
-			"MOSFETs",
-			"platformio"
-		]
+		}
 	}
 }
