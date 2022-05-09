@@ -1,4 +1,4 @@
 <map id="Measurement" name="Measurement">
-<area shape="rect" id="node1" title=" " alt="" coords="27,5,129,32"/>
+<area shape="rect" id="node1" title="Defines an interface for measuring the frequency, rotational speed, or voltage of a generator to use ..." alt="" coords="27,5,129,32"/>
 <area shape="rect" id="node2" href="$class_tachometer_j_encoder.html" title="This class measures the speed of a generator using a tachometer." alt="" coords="5,80,151,107"/>
 </map>

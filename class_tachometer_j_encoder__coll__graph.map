@@ -1,4 +1,4 @@
 <map id="TachometerJEncoder" name="TachometerJEncoder">
 <area shape="rect" id="node1" title="This class measures the speed of a generator using a tachometer." alt="" coords="5,80,151,107"/>
-<area shape="rect" id="node2" href="$class_measurement.html" title=" " alt="" coords="27,5,129,32"/>
+<area shape="rect" id="node2" href="$class_measurement.html" title="Defines an interface for measuring the frequency, rotational speed, or voltage of a generator to use ..." alt="" coords="27,5,129,32"/>
 </map>
