@@ -48,6 +48,13 @@ public:
             write(relay, setState);
         }
     }
+
+protected:
+    /**
+     * @brief  set a specific relay to a state, just to keep the code that actually drives a relay separate
+     * @param  relay: [0,N) the relay to write to
+     * @param  setState: true=active false=inactive
+     */
     void write(byte relay, bool setState)
     {
         digitalWrite(pin[relay], setState == active);

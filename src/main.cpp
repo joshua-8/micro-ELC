@@ -33,7 +33,7 @@ LoadAdjustAnalogWrite fineLoadAdjust = LoadAdjustAnalogWrite(18);
 LoadAdjustCoarseFine loadAdjust = LoadAdjustCoarseFine(coarseLoadAdjust, fineLoadAdjust, pow(2, numRelays), 32, 10); // coarse fine numCoarseSteps maxResistance fineResistance
 JEncoderAS5048bI2C tachEncoder = JEncoderAS5048bI2C(); // JEncoderSingleAttachInterrupt(27, 1.0, false, 100000, 10000); // pin, dist per count, reverse, slowest interval us, switchbounce us
 // jENCODER_MAKE_ISR_MACRO(tachEncoder);
-TachometerJEncoder tach = TachometerJEncoder(tachEncoder, 3); // num to average
+TachometerJEncoder tach = TachometerJEncoder(tachEncoder, 6); // num to average
 
 float setpoint = .5; // RPS (for AS5048 encoder)
 float input = 0;
@@ -50,8 +50,8 @@ void setup()
     // tachEncoder.setUpInterrupts(tachEncoder_jENCODER_ISR);
     Wire.begin(32, 33);
     pidControl.SetOutputLimits(-.5, .5);
-    pidControl.SetSampleTimeUs(20000);
-    pidControl.SetTunings(1.80, 4.0, 0);
+    pidControl.SetSampleTimeUs(20000); //void loop needs to run at least this often
+    pidControl.SetTunings(1.80, 4.0, 0); //P,I,D TUNINGS
     pidControl.SetControllerDirection(QuickPID::Action::reverse); // increasing the load slows down the motor
     pidControl.SetMode(QuickPID::Control::automatic); // turn on pid
 }
@@ -74,5 +74,5 @@ void loop()
     Serial.print(",");
 
     Serial.println();
-    delay(25);
+    delay(10); 
 }
