@@ -1,7 +1,7 @@
 # micro-ELC
 
 [![github actions badge](https://github.com/joshua-8/micro-ELC/actions/workflows/CI.yml/badge.svg)](https://github.com/joshua-8/micro-ELC/actions/workflows/CI.yml)
-
+[![CodeQL](https://github.com/joshua-8/micro-ELC/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/joshua-8/micro-ELC/actions/workflows/codeql-analysis.yml)
 Note: This code has only been tested with a prototype. Don't use this in a real system without testing it yourself.
 
 This software is for making an Electronic Load Controller.
