@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_relays_driver_basic-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">RelaysDriverBasic&lt; N &gt; Class Template Reference</div></div>
@@ -105,14 +106,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad1bb2598627e0fcf9bfc4feeb4988324"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_relays_driver_basic.html#ad1bb2598627e0fcf9bfc4feeb4988324">set</a> (uint16_t bits)</td></tr>
 <tr class="memdesc:ad1bb2598627e0fcf9bfc4feeb4988324"><td class="mdescLeft">&#160;</td><td class="mdescRight">activate relays corresponding to a bit that's 1.  <a href="class_relays_driver_basic.html#ad1bb2598627e0fcf9bfc4feeb4988324">More...</a><br /></td></tr>
 <tr class="separator:ad1bb2598627e0fcf9bfc4feeb4988324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac89fcc10a7dd3f265f0c9070ab0d4088"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_relays_driver_basic.html#ac89fcc10a7dd3f265f0c9070ab0d4088">write</a> (byte relay, bool setState)</td></tr>
-<tr class="separator:ac89fcc10a7dd3f265f0c9070ab0d4088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af38f82cdf6175693559a8a117ece2290"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_relays_driver.html#af38f82cdf6175693559a8a117ece2290">set</a> (uint16_t bits)=0</td></tr>
 <tr class="memdesc:af38f82cdf6175693559a8a117ece2290"><td class="mdescLeft">&#160;</td><td class="mdescRight">activate relays corresponding to a bit that's 1.  <a href="class_relays_driver.html#af38f82cdf6175693559a8a117ece2290">More...</a><br /></td></tr>
 <tr class="separator:af38f82cdf6175693559a8a117ece2290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6ff967a30efd62130a0b6900891d6d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_relays_driver.html#ad6ff967a30efd62130a0b6900891d6d7">begin</a> ()=0</td></tr>
 <tr class="memdesc:ad6ff967a30efd62130a0b6900891d6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function should be called on startup. It sets up pinmodes.  <a href="class_relays_driver.html#ad6ff967a30efd62130a0b6900891d6d7">More...</a><br /></td></tr>
 <tr class="separator:ad6ff967a30efd62130a0b6900891d6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac89fcc10a7dd3f265f0c9070ab0d4088"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_relays_driver_basic.html#ac89fcc10a7dd3f265f0c9070ab0d4088">write</a> (byte relay, bool setState)</td></tr>
+<tr class="memdesc:ac89fcc10a7dd3f265f0c9070ab0d4088"><td class="mdescLeft">&#160;</td><td class="mdescRight">set a specific relay to a state, just to keep the code that actually drives a relay separate  <a href="class_relays_driver_basic.html#ac89fcc10a7dd3f265f0c9070ab0d4088">More...</a><br /></td></tr>
+<tr class="separator:ac89fcc10a7dd3f265f0c9070ab0d4088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -283,10 +288,19 @@ template&lt;uint8_t N&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>set a specific relay to a state, just to keep the code that actually drives a relay separate </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">relay</td><td>[0,N) the relay to write to </td></tr>
+    <tr><td class="paramname">setState</td><td>true=active false=inactive </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
