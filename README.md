@@ -5,6 +5,8 @@
 
 https://github.com/joshua-8/micro-ELC
 
+**NOTE:** This code has only been tested with a prototype. Don't use this in a real system without testing it yourself.
+
 This software is for making an Electronic Load Controller.
 
 It controls an array of resistors to keep the speed of a synchronous generator constant.
@@ -16,4 +18,4 @@ Use PlatformIO to upload to an esp32 dev module
 Questions about this program? please post [here](https://github.com/joshua-8/micro-ELC/discussions)
 
 
-**NOTE:** This code has only been tested with a prototype. Don't use this in a real system without testing it yourself.
+
