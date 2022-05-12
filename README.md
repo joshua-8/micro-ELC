@@ -3,6 +3,8 @@
 [![github actions badge](https://github.com/joshua-8/micro-ELC/actions/workflows/CI.yml/badge.svg)](https://github.com/joshua-8/micro-ELC/actions/workflows/CI.yml)
 [![CodeQL](https://github.com/joshua-8/micro-ELC/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/joshua-8/micro-ELC/actions/workflows/codeql-analysis.yml)
 
+https://github.com/joshua-8/micro-ELC
+
 This software is for making an Electronic Load Controller.
 
 It controls an array of resistors to keep the speed of a synchronous generator constant.
