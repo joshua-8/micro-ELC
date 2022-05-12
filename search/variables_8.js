@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['numcoarsesteps_0',['numCoarseSteps',['../class_load_adjust_coarse_fine.html#af5149b76a9ce0385ced25f97dff3b883',1,'LoadAdjustCoarseFine']]],
-  ['numrelays_1',['numRelays',['../main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef',1,'main.cpp']]]
+  ['liability_0',['LIABILITY',['../_l_i_c_e_n_s_e_8txt.html#a58f6ae029cf250c737157e8dc5325cdf',1,'LICENSE.txt']]],
+  ['loadadjust_1',['loadAdjust',['../main_8cpp.html#ad041dfb5d653536ea99cbf979c28097d',1,'main.cpp']]]
 ];

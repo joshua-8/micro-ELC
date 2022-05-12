@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['input_0',['input',['../main_8cpp.html#a0c92b536886cab3f637dce4b7a0956bd',1,'main.cpp']]],
-  ['invert_1',['invert',['../class_load_adjust_analog_write.html#a17596f7934a30cc15242e36bf7a08b77',1,'LoadAdjustAnalogWrite']]]
+  ['granted_0',['granted',['../_l_i_c_e_n_s_e_8txt.html#a3f397f1f49ff48b3075e041ba92b2330',1,'LICENSE.txt']]]
 ];

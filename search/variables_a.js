@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pidcontrol_0',['pidControl',['../main_8cpp.html#a693b350e8183597ad51eb9081cfa7db3',1,'main.cpp']]],
-  ['pin_1',['pin',['../class_load_adjust_analog_write.html#a05b3e79de1451d575a250eae1f9291db',1,'LoadAdjustAnalogWrite::pin()'],['../class_relays_driver_basic.html#a953ccb683aedb09c13577071ef55dafd',1,'RelaysDriverBasic::pin()']]]
+  ['numcoarsesteps_0',['numCoarseSteps',['../class_load_adjust_coarse_fine.html#af5149b76a9ce0385ced25f97dff3b883',1,'LoadAdjustCoarseFine']]],
+  ['numrelays_1',['numRelays',['../main_8cpp.html#adf969b76cbdccc6d59013f3ed8e291ef',1,'main.cpp']]]
 ];
