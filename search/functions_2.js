@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['getmeasurement_0',['getMeasurement',['../class_measurement.html#a7e5ea2499a77a454815ea56fb69acd96',1,'Measurement::getMeasurement()'],['../class_tachometer_j_encoder.html#a901dd9abd65952e7909204a98f311abf',1,'TachometerJEncoder::getMeasurement()']]]
+  ['loadadjustanalogwrite_0',['LoadAdjustAnalogWrite',['../class_load_adjust_analog_write.html#aa6aac2f93a8e22e42bddcebe0b8e20a2',1,'LoadAdjustAnalogWrite']]],
+  ['loadadjustcoarsefine_1',['LoadAdjustCoarseFine',['../class_load_adjust_coarse_fine.html#a219deecc42884eaff64e42196e4c4b97',1,'LoadAdjustCoarseFine']]],
+  ['loadadjustrelayparallelbinary_2',['LoadAdjustRelayParallelBinary',['../class_load_adjust_relay_parallel_binary.html#acf88e99fc440f0dbb1e58852e44689d9',1,'LoadAdjustRelayParallelBinary']]],
+  ['loop_3',['loop',['../main_8cpp.html#afe461d27b9c48d5921c00d521181f12f',1,'main.cpp']]]
 ];

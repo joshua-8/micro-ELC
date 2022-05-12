@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tachometerjencoder_0',['TachometerJEncoder',['../class_tachometer_j_encoder.html#aee1142cb785acc9071e7ae90d5850e8e',1,'TachometerJEncoder']]]
+  ['write_0',['write',['../class_relays_driver_basic.html#ac89fcc10a7dd3f265f0c9070ab0d4088',1,'RelaysDriverBasic']]]
 ];
